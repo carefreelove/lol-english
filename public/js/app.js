@@ -26,6 +26,20 @@ window.App = (function () {
     return e;
   }
 
+  /** 英文名 → 可点单词（沿用词条弹层：音标 / 释义 / 发音） */
+  function nameEn(text, tag, cls) {
+    const e = el(tag || 'span', cls || null);
+    Annotate.renderInto(e, text || '', { inName: true });
+    return e;
+  }
+
+  /** 名称行：英文名（可点）＋ 中文名（原样文本），中间两空格，与旧版排版一致 */
+  function nameLine(text, zh, tag, cls) {
+    const e = nameEn(text, tag, cls);
+    if (zh) e.appendChild(document.createTextNode('  ' + zh));
+    return e;
+  }
+
   function img(src, cls) {
     const i = document.createElement('img');
     i.loading = 'lazy';
@@ -154,7 +168,7 @@ window.App = (function () {
       top.style.cssText = 'display:flex;gap:12px;align-items:center';
       top.appendChild(img(c.icon));
       const h = el('div');
-      h.appendChild(el('h3', null, c.nameEn + '  ' + c.nameZh));
+      h.appendChild(nameLine(c.nameEn, c.nameZh, 'h3'));
       h.appendChild(el('div', 'muted', c.titleEn + ' · ' + c.titleZh));
       top.appendChild(h);
       head.appendChild(top);
@@ -170,9 +184,12 @@ window.App = (function () {
         c.skins.forEach(function (s) {
           const box = el('div', 'skin');
           box.appendChild(img(s.loading));
-          box.appendChild(el('span', null, s.nameEn));
+          box.appendChild(nameEn(s.nameEn, 'span'));
           box.appendChild(el('span', null, s.nameZh));
-          box.addEventListener('click', function () { openModal(s.splash, s.nameEn + ' / ' + s.nameZh); });
+          box.addEventListener('click', function (e) {
+            if (e.target.classList.contains('w')) return;   // 点名字里的词 → 只弹词条，不开大图
+            openModal(s.splash, s.nameEn + ' / ' + s.nameZh);
+          });
           strip.appendChild(box);
         });
         head.appendChild(strip);
@@ -184,7 +201,10 @@ window.App = (function () {
       const p = el('div', 'skill');
       p.appendChild(img(c.passive.icon));
       const pb = el('div', 'body');
-      pb.appendChild(el('div', 'head', '被动 · ' + c.passive.nameEn + '  ' + c.passive.nameZh));
+      const pHead = el('div', 'head');
+      pHead.appendChild(document.createTextNode('被动 · '));
+      pHead.appendChild(nameLine(c.passive.nameEn, c.passive.nameZh, 'b'));
+      pb.appendChild(pHead);
       pb.appendChild(biBlock(c.passive.descEn, c.passive.descZh));
       p.appendChild(pb);
       pCard.appendChild(p);
@@ -198,7 +218,7 @@ window.App = (function () {
         const b = el('div', 'body');
         const hd = el('div', 'head');
         hd.appendChild(el('span', 'slot', s.slot));
-        hd.appendChild(el('b', null, s.nameEn + '  ' + s.nameZh));
+        hd.appendChild(nameLine(s.nameEn, s.nameZh, 'b'));
         b.appendChild(hd);
         b.appendChild(el('div', 'stats', '冷却 ' + (s.cooldown || '-') + ' · 消耗 ' + (s.cost || '-') + ' · 距离 ' + (s.range || '-')));
         b.appendChild(biBlock(s.descEn, s.descZh));
@@ -249,7 +269,7 @@ window.App = (function () {
       const top = el('div', 'top');
       top.appendChild(img(i.icon));
       const nm = el('div', 'nm');
-      nm.appendChild(el('b', null, i.nameEn));
+      nm.appendChild(nameEn(i.nameEn, 'b'));
       nm.appendChild(el('span', null, i.nameZh));
       nm.appendChild(el('span', 'gold', '  ' + i.gold + 'g'));
       top.appendChild(nm);
@@ -285,14 +305,14 @@ window.App = (function () {
       const card = el('div', 'card rune-tree');
       const head = el('div', 'head');
       head.appendChild(img(tree.icon));
-      head.appendChild(el('span', null, tree.nameEn + '  ' + tree.nameZh));
+      head.appendChild(nameLine(tree.nameEn, tree.nameZh));
       card.appendChild(head);
       tree.slots.forEach(function (slot) {
         slot.runes.forEach(function (r) {
           const row = el('div', 'rune');
           row.appendChild(img(r.icon));
           const b = el('div', 'body');
-          b.appendChild(el('div', 'head', r.nameEn + '  ' + r.nameZh));
+          b.appendChild(nameLine(r.nameEn, r.nameZh, 'div', 'head'));
           b.appendChild(biBlock(r.shortEn, r.shortZh));
           row.appendChild(b);
           card.appendChild(row);
@@ -312,7 +332,7 @@ window.App = (function () {
       top.style.cssText = 'display:flex;gap:10px;align-items:center';
       top.appendChild(img(s.icon));
       const nm = el('div');
-      nm.appendChild(el('b', null, s.nameEn + '  ' + s.nameZh));
+      nm.appendChild(nameLine(s.nameEn, s.nameZh, 'b'));
       nm.appendChild(el('div', 'muted', '冷却 ' + (s.cooldown || '-')));
       top.appendChild(nm);
       card.appendChild(top);

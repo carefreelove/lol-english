@@ -137,11 +137,14 @@ export async function buildDictionary({ enTexts, properNouns }) {
     if (!words[lemma]) words[lemma] = makeWord(e);
   }
 
-  // 6. 跳过集：功能词 + 游戏造词 + 英雄专名
-  const skip = new Set([...STOPWORDS, ...GAME_TERMS]);
+  // 6. 跳过集
+  //    skip     —— 任何地方都不标注（功能词，如 of/the/and）
+  //    softSkip —— 正文里跳过、名称里可点（LoL 造词 + 英雄专名）
+  const softSkip = new Set(GAME_TERMS);
   for (const n of properNouns || []) {
-    for (const w of collectWords(n)) skip.add(w);
+    for (const w of collectWords(n)) softSkip.add(w);
   }
+  const skip = new Set(STOPWORDS);
 
   let rareCount = 0;
   for (const k of Object.keys(words)) if (words[k].r === 1) rareCount++;
@@ -154,6 +157,7 @@ export async function buildDictionary({ enTexts, properNouns }) {
       rule: 'rarity-v1',
     },
     skip: [...skip].sort(),
+    softSkip: [...softSkip].sort(),
     forms,
     words,
   };
@@ -174,6 +178,7 @@ export async function buildDictionary({ enTexts, properNouns }) {
     surfaces: needed.size,
     unresolvedCount: unresolved.length,
     skipCount: skip.size,
+    softSkipCount: softSkip.size,
     unknownTop,
   };
   await writeFile(join(DATA_DIR, 'report.dict.js'), `window.LOL=window.LOL||{};\nwindow.LOL.reportDict=${jsLiteral(report)};\n`);

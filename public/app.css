@@ -339,7 +339,8 @@ body.no-highlight .w.rare { background: none; box-shadow: none; border-bottom: 1
 }
 .item-card .nm { min-width: 0; }
 .item-card .nm b { display: block; font-size: 13.5px; color: var(--fg); }
-.item-card .nm span { color: var(--muted); font-size: 12px; }
+/* 直接子代：名称里的可点单词 <span class="w"> 需继承 <b> 的颜色字号，不能被这里覆盖 */
+.item-card .nm > span { color: var(--muted); font-size: 12px; }
 .item-card .gold { color: var(--gold); font-size: 12.5px; font-weight: 600; }
 .item-detail { margin-top: 10px; border-top: 1px solid var(--line-soft); padding-top: 8px; }
 
@@ -357,8 +358,9 @@ body.no-highlight .w.rare { background: none; box-shadow: none; border-bottom: 1
   transition: border-color 0.16s, box-shadow 0.16s;
 }
 .skin:hover img { border-color: var(--gold); box-shadow: 0 0 14px rgba(200, 170, 110, 0.35); }
-.skin span { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.35; margin-top: 4px; }
-.skin span:first-of-type { color: var(--fg); }
+/* 直接子代：否则名称里的可点单词 <span class="w"> 会各自变成块级，一行一个词 */
+.skin > span { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.35; margin-top: 4px; }
+.skin > span:first-of-type { color: var(--fg); }
 
 /* ---------------- 符文 ---------------- */
 .rune-tree { margin-bottom: 16px; }

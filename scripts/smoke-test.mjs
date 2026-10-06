@@ -84,7 +84,8 @@ async function main() {
   check('词典 slams→slam（音标 slæm）', e1 && e1.p === 'slæm', e1 && e1.p);
   const e2 = window.Annotate.lookup('obliterate');
   check('词典 obliterate 标为生僻', e2 && e2.r === 1);
-  check('跳过集含英雄专名 aatrox', window.Annotate.skip.has('aatrox'));
+  check('专名 aatrox 进 softSkip（正文跳过、名称可点）', window.Annotate.softSkip.has('aatrox'));
+  check('功能词 the 进 skip（从不标注）', window.Annotate.skip.has('the'));
 
   // 深链接 #/champions/Ahri
   window.location.hash = '#/champions/Ahri';
@@ -111,6 +112,25 @@ async function main() {
   check('点击单词弹出释义层', !pop.classList.contains('hidden'));
   check('弹层含发音/收藏按钮', pop.querySelectorAll('button').length >= 2);
 
+  // 名称（技能名/被动名/皮肤名）也要能点词查义 —— 名称走的是同一套词条弹层
+  const nameW = doc.querySelector('.skill .head .w');
+  check('技能名切成可点单词', !!nameW && !!nameW.dataset.w, nameW && nameW.dataset.w);
+  check('名称里的词不做生僻高亮', !!nameW && nameW.className === 'w', nameW && nameW.className);
+  nameW.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  await tick();
+  check('点技能名里的词 → 弹层标题为该词',
+    !pop.classList.contains('hidden') && pop.querySelector('.pw').textContent === nameW.textContent,
+    pop.querySelector('.pw').textContent);
+
+  const skinW = doc.querySelector('.skin .w');
+  check('皮肤名切成可点单词', !!skinW && !!skinW.dataset.w, skinW && skinW.dataset.w);
+  const imgModal = doc.getElementById('modal');
+  check('大图弹层初始隐藏', imgModal.classList.contains('hidden'));
+  skinW.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  await tick();
+  check('点皮肤名里的词 → 弹词条而非大图',
+    !pop.classList.contains('hidden') && imgModal.classList.contains('hidden'));
+
   window.Favorites.add({ lemma: 'testword', w: 'testword', phonetic: 'test', zh: '测试' });
   check('收藏写入成功', window.Favorites.has('testword'));
   check('收藏进入 localStorage', /testword/.test(window.localStorage.getItem('lolEnglish.favorites.v1') || ''));
@@ -124,13 +144,18 @@ async function main() {
   await tick();
   check('装备展开显示描述', doc.querySelectorAll('.item-detail').length === 1);
   check('装备描述里有可点单词', doc.querySelectorAll('.item-detail .w').length > 0, doc.querySelectorAll('.item-detail .w').length);
+  const itemNameW = doc.querySelector('.item-card .nm .w');
+  check('装备名切成可点单词', !!itemNameW && !!itemNameW.dataset.w, itemNameW && itemNameW.dataset.w);
 
   window.App.go('runes');
   await tick();
   check('符文树 5 棵', doc.querySelectorAll('.rune-tree').length === 5, doc.querySelectorAll('.rune-tree').length);
+  check('符文系名切成可点单词', !!doc.querySelector('.rune-tree > .head .w'), (doc.querySelector('.rune-tree > .head .w') || {}).dataset?.w);
+  check('符文名切成可点单词', !!doc.querySelector('.rune .body .head .w'), (doc.querySelector('.rune .body .head .w') || {}).dataset?.w);
   window.App.go('summoners');
   await tick();
   check('召唤师技能 16 个', doc.querySelectorAll('.grid .card').length === 16, doc.querySelectorAll('.grid .card').length);
+  check('召唤师技能名切成可点单词', !!doc.querySelector('.grid .card b .w'), (doc.querySelector('.grid .card b .w') || {}).dataset?.w);
 
   window.Store.setSetting('showZh', false);
   check('关闭中文 → body.hide-zh', doc.body.classList.contains('hide-zh'));
