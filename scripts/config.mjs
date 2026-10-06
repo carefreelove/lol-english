@@ -7,7 +7,6 @@ export const ROOT = dirname(HERE);
 export const CACHE_DIR = join(ROOT, '.cache');
 export const PUBLIC_DIR = join(ROOT, 'public');
 export const DATA_DIR = join(PUBLIC_DIR, 'data');
-export const IMG_DIR = join(DATA_DIR, 'img');
 
 export const DDRAGON = 'https://ddragon.leagueoflegends.com';
 export const VERSIONS_URL = `${DDRAGON}/api/versions.json`;

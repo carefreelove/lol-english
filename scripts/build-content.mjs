@@ -2,13 +2,18 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  DDRAGON, LOCALES, CONCURRENCY, CACHE_DIR, DATA_DIR, IMG_DIR, SR_MAP_ID,
+  DDRAGON, LOCALES, CONCURRENCY, CACHE_DIR, DATA_DIR, PUBLIC_DIR, SR_MAP_ID,
 } from './config.mjs';
 import { getJsonCached, mapLimit, downloadCached } from './lib/http.mjs';
 import { clean, findMarkup } from './lib/text.mjs';
 
 const SPELL_SLOTS = ['Q', 'W', 'E', 'R'];
 const basename = (p) => String(p).split('/').pop();
+
+// 小图标存到 public/data/img/<类>/<文件>；数据里的 icon 字段是
+// 相对 public/index.html 的路径，浏览器直接拿它当 src 用
+const iconRef = (kind, file) => `data/img/${kind}/${file}`;
+const iconDest = (ref) => join(PUBLIC_DIR, ...ref.split('/'));
 
 const dataUrl = (ver, loc, file) => `${DDRAGON}/cdn/${ver}/data/${loc}/${file}`;
 const cachePathFor = (ver, loc, file) => join(CACHE_DIR, 'ddragon', ver, loc, ...file.split('/'));
@@ -76,13 +81,13 @@ export async function buildContent(version) {
       nameZh: zh.passive?.name ?? '',
       descEn: clean(en.passive?.description),
       descZh: clean(zh.passive?.description),
-      icon: `img/passive/${basename(en.passive?.image?.full)}`,
+      icon: iconRef('passive', basename(en.passive?.image?.full)),
     };
     addIcon(`${DDRAGON}/cdn/${version}/img/passive/${basename(en.passive?.image?.full)}`, passive.icon);
 
     const spells = (en.spells || []).map((sp, i) => {
       const zsp = zh.spells?.[i] ?? {};
-      const icon = `img/spell/${basename(sp.image?.full)}`;
+      const icon = iconRef('spell', basename(sp.image?.full));
       addIcon(`${DDRAGON}/cdn/${version}/img/spell/${basename(sp.image?.full)}`, icon);
       return {
         slot: SPELL_SLOTS[i] ?? `R${i + 1}`,
@@ -135,9 +140,9 @@ export async function buildContent(version) {
       titleEn: en.title,
       titleZh: zh.title,
       tags: en.tags || [],
-      icon: `img/champion/${id}.png`,
+      icon: iconRef('champion', `${id}.png`),
     });
-    addIcon(`${DDRAGON}/cdn/${version}/img/champion/${id}.png`, `img/champion/${id}.png`);
+    addIcon(`${DDRAGON}/cdn/${version}/img/champion/${id}.png`, iconRef('champion', `${id}.png`));
 
     champSpellCount += spells.length;
     skinCount += skins.length;
@@ -165,7 +170,7 @@ export async function buildContent(version) {
     if (!en.gold || en.gold.purchasable !== true) continue;
     if (!en.description) continue;
 
-    const icon = `img/item/${itemId}.png`;
+    const icon = iconRef('item', `${itemId}.png`);
     addIcon(`${DDRAGON}/cdn/${version}/img/item/${itemId}.png`, icon);
 
     const rec = {
@@ -197,7 +202,7 @@ export async function buildContent(version) {
     const en = sumEn.data[key];
     const zh = sumZh?.data?.[key];
     if (!zh) continue;
-    const icon = `img/summoner/${basename(en.image?.full)}`;
+    const icon = iconRef('summoner', basename(en.image?.full));
     addIcon(`${DDRAGON}/cdn/${version}/img/spell/${basename(en.image?.full)}`, icon);
     const rec = {
       key,
@@ -225,7 +230,7 @@ export async function buildContent(version) {
     const zhRuneById = new Map();
     (ztree?.slots || []).forEach((sl) => (sl.runes || []).forEach((r) => zhRuneById.set(r.id, r)));
 
-    const icon = `img/rune/${basename(tree.icon)}`;
+    const icon = iconRef('rune', basename(tree.icon));
     addIcon(`${DDRAGON}/cdn/img/${tree.icon}`, icon);
 
     return {
@@ -236,7 +241,7 @@ export async function buildContent(version) {
       slots: (tree.slots || []).map((sl) => ({
         runes: (sl.runes || []).map((r) => {
           const zr = zhRuneById.get(r.id);
-          const rIcon = `img/rune/${basename(r.icon)}`;
+          const rIcon = iconRef('rune', basename(r.icon));
           addIcon(`${DDRAGON}/cdn/img/${r.icon}`, rIcon);
           const rec = {
             id: r.id,
@@ -261,11 +266,11 @@ export async function buildContent(version) {
 
   // ---------- 图标本地化 ----------
   const uniqueIcons = new Map();
-  for (const ic of icons) if (ic.rel && ic.rel !== 'img/spell/undefined' && !ic.rel.endsWith('/undefined')) uniqueIcons.set(ic.rel, ic);
+  for (const ic of icons) if (ic.rel && ic.url && !ic.rel.endsWith('/undefined')) uniqueIcons.set(ic.rel, ic);
   let iconDownloaded = 0;
   await mapLimit([...uniqueIcons.values()], 12, async (ic) => {
     try {
-      const did = await downloadCached(ic.url, join(IMG_DIR, ic.rel), { minBytes: 1 });
+      const did = await downloadCached(ic.url, iconDest(ic.rel), { minBytes: 1 });
       if (did) iconDownloaded++;
     } catch (e) {
       missing.push(`icon: ${ic.rel} (${e.message})`);

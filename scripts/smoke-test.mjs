@@ -68,6 +68,18 @@ async function main() {
   check('英雄列表 173 项', doc.querySelectorAll('.champ-item').length === 173, doc.querySelectorAll('.champ-item').length);
   check('metaInfo 已填充', /英雄\s*173/.test(doc.getElementById('metaInfo').textContent), doc.getElementById('metaInfo').textContent);
 
+  // 小图标必须真能取到（曾因构建路径多出一层 img/ 而全部 404）
+  async function iconOk(rel) {
+    const r = await fetch(BASE + '/' + rel);
+    return r.ok && /^image\//.test(r.headers.get('content-type') || '');
+  }
+  const champIcon = window.LOL.championsIndex[0].icon;
+  check('英雄图标可访问', await iconOk(champIcon), champIcon);
+  const firstItemIcon = window.LOL.items[0].icon;
+  check('装备图标可访问', await iconOk(firstItemIcon), firstItemIcon);
+  const firstSumIcon = window.LOL.summoners[0].icon;
+  check('召唤师技能图标可访问', await iconOk(firstSumIcon), firstSumIcon);
+
   const e1 = window.Annotate.lookup('slams');
   check('词典 slams→slam（音标 slæm）', e1 && e1.p === 'slæm', e1 && e1.p);
   const e2 = window.Annotate.lookup('obliterate');
@@ -86,6 +98,10 @@ async function main() {
   await waitFor(() => doc.querySelectorAll('.skill').length >= 1, 10000);
   check('技能块渲染（被动+4技能=5）', doc.querySelectorAll('.skill').length === 5, doc.querySelectorAll('.skill').length);
   check('皮肤缩略图渲染', doc.querySelectorAll('.skin').length > 0, doc.querySelectorAll('.skin').length);
+  const skillImg = doc.querySelector('.skill img');
+  check('技能/被动图标可访问', !!skillImg && (await iconOk(skillImg.getAttribute('src'))), skillImg && skillImg.getAttribute('src'));
+  const skinImg = doc.querySelector('.skin img');
+  check('皮肤缩略图走在线地址', !!skinImg && /^https?:\/\//.test(skinImg.getAttribute('src')), skinImg && skinImg.getAttribute('src'));
   const wSpan = doc.querySelector('.en .w');
   check('英文被切成可点击单词', !!wSpan && !!wSpan.dataset.w, wSpan && wSpan.dataset.w);
 
