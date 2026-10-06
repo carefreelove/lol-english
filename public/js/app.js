@@ -115,7 +115,11 @@ window.App = (function () {
       nm.appendChild(el('b', null, c.nameEn));
       nm.appendChild(el('span', null, c.nameZh + ' · ' + c.titleZh));
       item.appendChild(nm);
-      item.addEventListener('click', function () { champId = c.id; renderChampions(); });
+      item.addEventListener('click', function () {
+        champId = c.id;
+        setHash('champions', c.id);   // 可收藏书签，不触发 hashchange 重复渲染
+        renderChampions();
+      });
       list.appendChild(item);
     });
     left.appendChild(list);
@@ -140,7 +144,7 @@ window.App = (function () {
 
   function renderChampionDetail(right) {
     right.textContent = '';
-    right.appendChild(el('p', 'muted', '加载中…'));
+    right.appendChild(el('div', 'loading', '加载中…'));
     Store.getChampion(champId).then(function (c) {
       if (!c) { right.textContent = ''; right.appendChild(el('p', 'muted', '英雄数据缺失')); return; }
       right.textContent = '';
@@ -373,6 +377,21 @@ window.App = (function () {
     card.appendChild(toggleRow('显示中文对照（关闭后进入自测模式）', 'showZh'));
     card.appendChild(toggleRow('高亮生僻词', 'highlightRare'));
 
+    const themeRow = el('div', 'row');
+    themeRow.appendChild(el('span', null, '外观主题'));
+    const themeBox = el('div', 'toolbar');
+    themeBox.style.marginBottom = '0';
+    [['dark', '深色 · 海克斯'], ['light', '浅色']].forEach(function (pair) {
+      const b = el('button', 'chip' + (s.theme === pair[0] ? ' active' : ''), pair[1]);
+      b.addEventListener('click', function () {
+        Store.setSetting('theme', pair[0]);
+        renderSettings();
+      });
+      themeBox.appendChild(b);
+    });
+    themeRow.appendChild(themeBox);
+    card.appendChild(themeRow);
+
     const rateRow = el('div', 'row');
     rateRow.appendChild(el('span', null, '朗读语速'));
     const range = document.createElement('input');
@@ -424,10 +443,26 @@ window.App = (function () {
     });
   }
 
+  /** 解析 #/view[/arg]，如 #/champions/Aatrox */
+  function parseHash() {
+    const parts = (location.hash || '').replace(/^#\/?/, '').split('/').filter(Boolean);
+    return {
+      view: VIEWS[parts[0]] ? parts[0] : 'champions',
+      arg: parts[1] ? decodeURIComponent(parts[1]) : null,
+    };
+  }
+
+  /** 只改地址栏不触发 hashchange（用 replaceState），file:// 失败则忽略 */
+  function setHash(view, arg) {
+    const target = '#/' + view + (arg ? '/' + encodeURIComponent(arg) : '');
+    if (location.hash === target) return;
+    try { history.replaceState(null, '', target); } catch (e) { location.hash = target; }
+  }
+
   function go(name) {
     if (!VIEWS[name]) name = 'champions';
     currentView = name;
-    if (location.hash !== '#/' + name) location.hash = '#/' + name;
+    setHash(name);
     rerender();
   }
 
@@ -437,8 +472,9 @@ window.App = (function () {
       b.addEventListener('click', function () { go(b.dataset.view); });
     });
     window.addEventListener('hashchange', function () {
-      const name = (location.hash || '').replace(/^#\//, '') || 'champions';
-      if (name !== currentView) { currentView = name; rerender(); }
+      const h = parseHash();
+      if (h.arg && h.view === 'champions') champId = h.arg;
+      if (h.view !== currentView || h.arg) { currentView = h.view; rerender(); }
     });
 
     const meta = Store.meta();
@@ -451,8 +487,9 @@ window.App = (function () {
     Favorites.onChange(updateFavCount);
     updateFavCount();
 
-    const name = (location.hash || '').replace(/^#\//, '') || 'champions';
-    currentView = VIEWS[name] ? name : 'champions';
+    const h = parseHash();
+    currentView = h.view;
+    if (h.arg && h.view === 'champions') champId = h.arg;
     rerender();
   }
 

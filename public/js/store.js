@@ -1,11 +1,12 @@
 window.Store = (function () {
   const SETTINGS_KEY = 'lolEnglish.settings.v1';
-  const DEFAULTS = { showZh: true, highlightRare: true, rate: 0.9 };
+  const DEFAULTS = { showZh: true, highlightRare: true, rate: 0.9, theme: 'dark' };
   let settings = Object.assign({}, DEFAULTS);
 
   function apply() {
     document.body.classList.toggle('hide-zh', !settings.showZh);
     document.body.classList.toggle('no-highlight', !settings.highlightRare);
+    document.body.classList.toggle('theme-light', settings.theme === 'light');
   }
 
   function loadSettings() {

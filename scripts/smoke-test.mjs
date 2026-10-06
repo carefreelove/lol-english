@@ -74,6 +74,14 @@ async function main() {
   check('词典 obliterate 标为生僻', e2 && e2.r === 1);
   check('跳过集含英雄专名 aatrox', window.Annotate.skip.has('aatrox'));
 
+  // 深链接 #/champions/Ahri
+  window.location.hash = '#/champions/Ahri';
+  await waitFor(function () {
+    const a = doc.querySelector('.champ-item.active');
+    return a && /Ahri/.test(a.textContent);
+  }, 8000);
+  check('深链接 #/champions/Ahri 自动选中', true, (doc.querySelector('.champ-item.active') || {}).textContent);
+
   doc.querySelector('.champ-item').dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
   await waitFor(() => doc.querySelectorAll('.skill').length >= 1, 10000);
   check('技能块渲染（被动+4技能=5）', doc.querySelectorAll('.skill').length === 5, doc.querySelectorAll('.skill').length);
