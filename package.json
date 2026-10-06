@@ -1,0 +1,18 @@
+{
+  "name": "lol-english",
+  "version": "1.0.0",
+  "description": "英雄联盟英文学习站 —— 中英对照查阅英雄技能/装备/皮肤/召唤师技能/符文，并标注生词",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:content": "node scripts/build-content.mjs",
+    "build:dict": "node scripts/build-dictionary.mjs",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2"
+  }
+}
