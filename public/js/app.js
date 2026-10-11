@@ -36,7 +36,7 @@ window.App = (function () {
   /** 名称行：英文名（可点）＋ 中文名（原样文本），中间两空格，与旧版排版一致 */
   function nameLine(text, zh, tag, cls) {
     const e = nameEn(text, tag, cls);
-    if (zh) e.appendChild(document.createTextNode('  ' + zh));
+    if (zh) e.appendChild(el('span', 'zh-inline', '  ' + zh));
     return e;
   }
 
@@ -94,7 +94,13 @@ window.App = (function () {
   let champQuery = '';
   const champTagFilter = new Set();
 
+  function stopPlayback() {
+    document.querySelectorAll('audio').forEach(function (audio) { if (!audio.paused) audio.pause(); });
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+  }
+
   function renderChampions() {
+    stopPlayback();
     view.textContent = '';
     const layout = el('div', 'layout');
     const left = el('div');
@@ -139,7 +145,7 @@ window.App = (function () {
     left.appendChild(list);
     if (!filtered.length) left.appendChild(el('p', 'muted', '没有匹配的英雄'));
 
-    right.appendChild(el('p', 'muted', '选择左侧英雄查看技能与皮肤'));
+    right.appendChild(el('p', 'empty', '选择一位英雄，从技能、台词与皮肤名开始学习。'));
     layout.appendChild(left);
     layout.appendChild(right);
     view.appendChild(layout);
@@ -169,7 +175,7 @@ window.App = (function () {
       top.appendChild(img(c.icon));
       const h = el('div');
       h.appendChild(nameLine(c.nameEn, c.nameZh, 'h3'));
-      h.appendChild(el('div', 'muted', c.titleEn + ' · ' + c.titleZh));
+      h.appendChild(nameLine(c.titleEn, c.titleZh, 'div', 'muted'));
       top.appendChild(h);
       head.appendChild(top);
       const tags = el('div', 'toolbar');
@@ -185,7 +191,7 @@ window.App = (function () {
           const box = el('div', 'skin');
           box.appendChild(img(s.loading));
           box.appendChild(nameEn(s.nameEn, 'span'));
-          box.appendChild(el('span', null, s.nameZh));
+          box.appendChild(el('span', 'zh-inline', s.nameZh));
           box.addEventListener('click', function (e) {
             if (e.target.classList.contains('w')) return;   // 点名字里的词 → 只弹词条，不开大图
             openModal(s.splash, s.nameEn + ' / ' + s.nameZh);
@@ -195,6 +201,7 @@ window.App = (function () {
         head.appendChild(strip);
       }
       right.appendChild(head);
+      right.appendChild(renderVoices(c));
 
       // 被动
       const pCard = el('div', 'card');
@@ -230,6 +237,68 @@ window.App = (function () {
       right.textContent = '';
       right.appendChild(el('p', 'muted', '加载失败：' + e.message));
     });
+  }
+
+  function renderVoices(c) {
+    const section = el('section', 'card voice-section');
+    section.setAttribute('aria-label', '英雄语音');
+    const heading = el('div', 'voice-heading');
+    heading.appendChild(el('h3', null, '英雄语音 · Voice lines'));
+    heading.appendChild(el('span', 'badge', String((c.voices || []).length)));
+    section.appendChild(heading);
+    section.appendChild(el('p', 'muted', '选用与禁用代表台词 · 点击英文查词，听原声练习跟读。中文为学习译文。'));
+    if (!c.voices || !c.voices.length) {
+      section.appendChild(el('p', 'muted', '尚未收录此英雄的语音，请重新构建数据。'));
+      return section;
+    }
+    c.voices.forEach(function (line) {
+      const row = el('article', 'voice-line');
+      row.dataset.voiceId = line.id;
+      const top = el('div', 'voice-heading');
+      top.appendChild(el('span', 'voice-event', line.event === 'pick' ? '选用 · Pick' : '禁用 · Ban'));
+      if (line.nonverbal) top.appendChild(el('span', 'muted', '非语言声音'));
+      if (line.fictionalLanguage) top.appendChild(el('span', 'muted', '虚构语言 · 保留原声'));
+      row.appendChild(top);
+      row.appendChild(biBlock(line.textEn, line.textZh));
+      const actions = el('div', 'voice-actions');
+      const audio = el('audio', 'voice-audio');
+      audio.controls = true;
+      audio.preload = 'none';
+      audio.src = line.audioEn;
+      audio.setAttribute('aria-label', c.nameEn + ' ' + line.event + ' 英文原声');
+      const status = el('span', 'muted voice-status');
+      status.setAttribute('role', 'status');
+      audio.addEventListener('play', function () {
+        document.querySelectorAll('audio').forEach(function (other) { if (other !== audio && !other.paused) other.pause(); });
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+      });
+      audio.addEventListener('error', function () {
+        status.textContent = line.nonverbal || line.fictionalLanguage
+          ? '原声暂时无法加载，请检查网络或打开来源。'
+          : '原声暂时无法加载，可使用英文朗读或打开来源。';
+      });
+      audio.addEventListener('canplay', function () { status.textContent = ''; });
+      actions.appendChild(el('span', 'muted', '听原声（联网）'));
+      actions.appendChild(audio);
+      if (!line.nonverbal && !line.fictionalLanguage) {
+        const speak = el('button', 'chip voice-speak', '英文朗读');
+        speak.addEventListener('click', function () {
+          document.querySelectorAll('audio').forEach(function (other) { if (!other.paused) other.pause(); });
+          TTS.speak(line.textEn);
+        });
+        actions.appendChild(speak);
+      }
+      const source = el('a', 'voice-source', '台词来源 ↗');
+      source.href = line.sourceUrl;
+      source.target = '_blank';
+      source.rel = 'noopener noreferrer';
+      actions.appendChild(source);
+      row.appendChild(actions);
+      row.appendChild(status);
+      section.appendChild(row);
+    });
+    section.appendChild(el('p', 'muted voice-credit', '台词转录：League of Legends Wiki contributors（CC BY-SA 3.0）；原始台词与音频 © Riot Games。学习译文沿用 CC BY-SA 3.0。'));
+    return section;
   }
 
   // ---------- 视图：装备 ----------
@@ -434,7 +503,8 @@ window.App = (function () {
     const info = el('div', 'card');
     const meta = Store.meta();
     info.appendChild(el('h3', null, '数据来源'));
-    info.appendChild(el('p', 'muted', '英雄联盟官方数据库 (Data Dragon) 版本 ' + (meta.version || '?') + '，中英文案均来自官方，未做机器翻译。'));
+    info.appendChild(el('p', 'muted', '技能、装备等中英文案来自官方 Data Dragon，版本 ' + (meta.version || '?') + '。'));
+    info.appendChild(el('p', 'muted', '英雄语音：League of Legends Wiki 台词转录与原声音频；中文为学习译文，不等同于国服配音。原声需要联网；浏览器朗读是否离线可用取决于已安装的语音。'));
     info.appendChild(el('p', 'muted', '词典：开源英汉词典 ECDICT（音标 / 中文释义 / 考纲标签 / 词频）。'));
     info.appendChild(el('p', 'muted', '生成时间：' + (meta.generatedAt || '?')));
     view.appendChild(info);
@@ -452,6 +522,7 @@ window.App = (function () {
   let currentView = 'champions';
 
   function rerender() {
+    stopPlayback();
     WordInfo.hide();
     (VIEWS[currentView] || renderChampions)();
     updateTabs();

@@ -10,6 +10,8 @@ export const DATA_DIR = join(PUBLIC_DIR, 'data');
 
 export const DDRAGON = 'https://ddragon.leagueoflegends.com';
 export const VERSIONS_URL = `${DDRAGON}/api/versions.json`;
+// 与审核后的语音覆盖基线保持一致；升级时显式指定并补齐新增英雄。
+export const CONTENT_VERSION = process.env.DDRAGON_VERSION || '16.19.1';
 
 // 官方数据只取这两种官方语言包，中英文案均来自官方库
 export const LOCALES = ['en_US', 'zh_CN'];

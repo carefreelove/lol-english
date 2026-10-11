@@ -1,7 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { ROOT, DATA_DIR, LOCALES, VERSIONS_URL } from './config.mjs';
-import { getJson } from './lib/http.mjs';
+import { ROOT, DATA_DIR, LOCALES, CONTENT_VERSION } from './config.mjs';
 import { buildContent } from './build-content.mjs';
 import { buildDictionary } from './build-dictionary.mjs';
 
@@ -33,9 +32,8 @@ async function main() {
   const t0 = Date.now();
   await mkdir(DATA_DIR, { recursive: true });
 
-  console.log('[1/4] 获取最新版本…');
-  const versions = await getJson(VERSIONS_URL);
-  const version = versions[0];
+  console.log('[1/4] 使用内容基线版本（可通过 DDRAGON_VERSION 指定）…');
+  const version = CONTENT_VERSION;
   console.log('      version =', version);
 
   console.log('[2/4] 拉取英雄联盟官方数据（中英双语）…');
@@ -90,6 +88,7 @@ async function main() {
   console.log('版本          :', version);
   console.log('英雄          :', content.counts.champions);
   console.log('英雄技能      :', content.counts.spells);
+  console.log('英雄语音      :', content.counts.voiceLines, '（覆盖', content.counts.voiceChampions, '位英雄）');
   console.log('皮肤          :', content.counts.skins);
   console.log('装备(峡谷)    :', content.counts.items);
   console.log('召唤师技能    :', content.counts.summoners);

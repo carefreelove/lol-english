@@ -17,6 +17,7 @@ window.TTS = (function () {
   function speak(text) {
     if (!supported) { if (window.App) window.App.toast('当前浏览器不支持语音朗读'); return; }
     try {
+      document.querySelectorAll('audio').forEach(function (audio) { if (!audio.paused) audio.pause(); });
       window.speechSynthesis.cancel();
       const u = new window.SpeechSynthesisUtterance(String(text));
       u.lang = 'en-US';

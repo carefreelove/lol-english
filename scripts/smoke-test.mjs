@@ -99,6 +99,37 @@ async function main() {
   await waitFor(() => doc.querySelectorAll('.skill').length >= 1, 10000);
   check('技能块渲染（被动+4技能=5）', doc.querySelectorAll('.skill').length === 5, doc.querySelectorAll('.skill').length);
   check('皮肤缩略图渲染', doc.querySelectorAll('.skin').length > 0, doc.querySelectorAll('.skin').length);
+  const voiceRows = doc.querySelectorAll('.voice-line');
+  check('选用与禁用语音各一条', voiceRows.length === 2);
+  check('语音中英对照与学习译文提示', !!doc.querySelector('.voice-line .zh').textContent && /学习译文/.test(doc.querySelector('.voice-section').textContent));
+  const voiceWord = doc.querySelector('.voice-line .w[data-w="annihilation"]');
+  check('语音词汇进入词典并高亮', !!voiceWord && voiceWord.classList.contains('rare') && !!window.Annotate.lookup('annihilation')?.t);
+  voiceWord.dispatchEvent(new window.MouseEvent('click', { bubbles: true }));
+  const voicePop = doc.getElementById('popover');
+  check('语音查词展示音标与中文释义', !!voicePop.querySelector('.ph') && !!voicePop.querySelector('.zh-def'));
+  voicePop.querySelector('.acts button:last-child').click();
+  check('语音生词可收藏', window.Favorites.has('annihilation'));
+  voicePop.querySelector('.acts button:last-child').click();
+  let spoken;
+  const realSpeak = window.TTS.speak;
+  window.TTS.speak = text => { spoken = text; };
+  doc.querySelector('.voice-speak').click();
+  check('整句朗读传入完整台词', spoken === voiceRows[0].querySelector('.en').textContent);
+  window.TTS.speak = realSpeak;
+  const voiceAudio = doc.querySelector('.voice-audio');
+  check('原声音频懒加载且带无障碍标签', voiceAudio.preload === 'none' && voiceAudio.controls && !!voiceAudio.getAttribute('aria-label'));
+  voiceAudio.dispatchEvent(new window.Event('error'));
+  check('原声失效显示提示而不隐藏译文', /暂时无法加载/.test(doc.querySelector('.voice-status').textContent) && !!doc.querySelector('.voice-line .zh').textContent);
+  voiceAudio.dispatchEvent(new window.Event('canplay'));
+  check('原声恢复后清除错误提示', doc.querySelector('.voice-status').textContent === '');
+  window.Store.setSetting('showZh', false);
+  check('自测模式实际隐藏台词中文', window.getComputedStyle(doc.querySelector('.voice-line .zh')).display === 'none');
+  check('自测模式实际隐藏技能中文名', window.getComputedStyle(doc.querySelector('.skill .zh-inline')).display === 'none');
+  window.Store.setSetting('showZh', true);
+  check('恢复台词中文显示', window.getComputedStyle(doc.querySelector('.voice-line .zh')).display !== 'none');
+  const allChampions = await Promise.all(window.Store.champions().map(c => window.Store.getChampion(c.id)));
+  check('所有英雄的懒加载数据均包含双语语音', allChampions.every(c => c?.voices?.length >= 2 && c.voices.every(v => v.textEn && v.textZh)));
+  check('语音数量与构建统计一致', allChampions.reduce((n,c) => n+c.voices.length,0) === window.LOL.meta.counts.voiceLines);
   const skillImg = doc.querySelector('.skill img');
   check('技能/被动图标可访问', !!skillImg && (await iconOk(skillImg.getAttribute('src'))), skillImg && skillImg.getAttribute('src'));
   const skinImg = doc.querySelector('.skin img');
@@ -166,6 +197,21 @@ async function main() {
   window.App.go('favorites');
   await tick();
   check('生词本视图渲染收藏', doc.querySelectorAll('.fav-item').length === 1, doc.querySelectorAll('.fav-item').length);
+
+  window.location.hash = '#/champions/Bard';
+  await waitFor(() => doc.querySelector('.voice-line .en')?.textContent === 'Bard chimes.');
+  check('非语言英雄显示原声和说明，不提供伪英语朗读', doc.querySelectorAll('.voice-audio').length === 2 && !doc.querySelector('.voice-speak'));
+  window.location.hash = '#/champions/Gnar';
+  await waitFor(() => /Gnar gada/.test(doc.querySelector('.voice-line .en')?.textContent || ''));
+  check('虚构语言保留原声并标注', /虚构语言/.test(doc.querySelector('.voice-line').textContent) && !doc.querySelector('.voice-speak'));
+
+  const fileDom = await JSDOM.fromFile(join(PUBLIC, 'index.html'), {
+    runScripts: 'dangerously', resources: 'usable', virtualConsole: vc,
+  });
+  await waitFor(() => fileDom.window.App && fileDom.window.LOL?.meta);
+  const fileChampion = await fileDom.window.Store.getChampion('Aatrox');
+  check('file:// 直接打开可加载语音数据与词典', fileChampion.voices.length === 2 && !!fileDom.window.Annotate.lookup('annihilation'));
+  fileDom.window.close();
 
   check('无脚本错误', errors.length === 0, errors.slice(0, 3).join(' | '));
 

@@ -1,196 +1,149 @@
-# LoL 英文学习站 · LoL English
+# LoL English · 英雄联盟英文学习站
 
-借《英雄联盟》学英语：把**英雄技能与被动、装备、皮肤名、召唤师技能、符文**做中英对照整理，
-生僻词自动高亮，任意英文词可点击查看**音标、中文释义、考纲标签、词频**。
+**从熟悉的英雄与台词开始，把每一局里的英语变成自己的词汇。**
 
-Learn English with League of Legends — a bilingual (English / 中文) reference for champion
-abilities & passives, items, skins, summoner spells and runes. Uncommon words are highlighted
-automatically, and **every English word is clickable** for its phonetic, definition, exam tag
-and word frequency.
+技能、装备、皮肤、符文与召唤师技能中英对照；新增 **173 位英雄、346 条选用 / 禁用语音**。听原声、读译文、点击生词查音标和释义，再收藏到生词本复习。
 
-**[中文文档](#中文文档) · [English](#english)**
+Learn English through League of Legends: bilingual game text, champion voice lines,
+original audio, word definitions and a personal vocabulary list.
 
-![预览 Preview](docs/preview.png)
+[中文指南](#中文指南) · [English guide](#english-guide) · [语音内容与来源](content/README.md) · [更新日志 / Changelog](CHANGELOG.md)
 
----
+![既有界面预览（截图尚未包含新增语音区）](docs/preview.png)
 
-## 中文文档
+## 中文指南
 
-### 特点
+### 可以怎样学
 
-| 项 | 说明 |
+1. **选一位英雄**：阅读被动、Q/W/E/R、皮肤名和选用 / 禁用台词。
+2. **听一句原声**：播放游戏原声，结合英文文本跟读；也可以用浏览器朗读整句。
+3. **查一个生词**：点击可标注英文词，查看音标、中文释义、考纲标签与词频，随手收藏。
+4. **做一次自测**：隐藏中文，尝试独立理解；在生词本集中复习或导出 JSON。
+
+| 内容 | 学习功能 |
 |---|---|
-| 中英对照 | 文案**全部取自官方数据**，不做机器翻译 |
-| 生词高亮 | 按词频/考纲自动判定生僻词并高亮 |
-| 点词查义 | 任意英文词 → 音标 + 中文释义 + 考纲标签 + 词频 |
-| 发音 | 浏览器内置语音朗读（离线可用） |
-| 生词本 | 收藏生词，本地持久保存，可导出 JSON |
-| 无需服务器 | 双击 `public/index.html` 即可打开 |
-| 自测模式 | 一键隐藏中文，检验自己是否读懂 |
+| 英雄技能与被动 | 中英对照、技能数值、点词查义 |
+| 英雄语音 | 每位英雄选用 / 禁用各一条，原声播放、学习译文、整句朗读、逐条来源 |
+| 装备、符文、召唤师技能 | 双语描述，装备支持搜索和分类筛选 |
+| 皮肤 | 双语名称查词，缩略图与大图预览 |
+| 生词本 | 本地保存、单词发音、JSON 导出 |
+| 学习设置 | 隐藏中文、生词高亮、朗读语速、深色 / 浅色主题 |
 
-### 数据来源
+语音和技能、装备共用同一套词典与标注流程：**音标、中文释义、考纲、词频、生词高亮、单词发音、收藏**保持一致。常见功能词和正文专名按既有规则跳过标注；未收录词会明确提示，不生成虚假释义。
 
-- **英雄联盟官方数据库** [Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon)
-  —— 取 `zh_CN` / `en_US` 两种官方语言包，游戏内文案（名称、描述）**直接来自官方库，未做机器翻译**；
-  仅当某字段官方缺失时才自行补译。
-- **词典** [ECDICT](https://github.com/skywind3000/ECDICT) —— 提供音标、中文释义、考纲标签、词频、柯林斯星级。
+### 本地使用
 
-当前版本：DDragon **16.19.1**（英雄 173 · 装备 253 · 召唤师技能 16 · 符文 5 系 · 皮肤 2100+）。
-
-### 使用步骤
-
-**前置要求**：Node.js ≥ 18（构建需要联网）。
+仅构建需要 Node.js ≥ 18；运行测试、抓取候选台词需要满足 jsdom 30 的 Node.js 要求（22.22.2+ 的 22.x、24.15.0+ 的 24.x 或 ≥ 26）。建议直接使用受支持的新版 Node.js。
 
 ```bash
-# 1. 一次性构建（下载官方数据 + 词典，生成本地数据文件）
-npm install --omit=dev   # 构建只需要一个依赖 csv-parse
+git clone https://github.com/carefreelove/lol-english.git
+cd lol-english
+npm ci --omit=dev
 npm run build
-
-# 2. 打开网站
-#    直接双击 public/index.html，无需启动任何服务器
 ```
 
-构建产物在 `public/data/`，该目录**不入库**（体积大），克隆后需自行构建一次。
+构建后双击 `public/index.html` 即可使用，无需服务器。英雄支持书签，例如 `public/index.html#/champions/Aatrox`。
 
-构建支持**断点续传**：中途失败重跑会跳过已下载的内容；原始下载物缓存在 `.cache/`，
-重复构建不会重新下载 65 MB 的词典。
+默认使用 **Data Dragon 16.19.1**，覆盖 173 位英雄。语音源文件已入库；`public/data/` 由构建生成，不入库。下载缓存在 `.cache/`，重复构建会复用已有文件。
 
-> 说明：小图标已下载到本地，核心内容完全离线可用；
-> 皮肤大图（loading/splash）体积过大改为在线加载，断网时自动隐藏并回退占位。
+- **离线可用**：构建后的双语文本、本地图标、词典、查词与生词本。
+- **需要联网**：皮肤大图和英雄原声音频。原声加载失败时会显示提示，文本仍可学习。
+- **浏览器朗读**：与游戏原声分开；是否支持离线取决于设备安装的语音。
 
-### 自检（可选）
+### 数据从哪里来
+
+| 数据 | 来源与边界 |
+|---|---|
+| 技能、装备等游戏文本 | [Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon) 的 `en_US` / `zh_CN` 官方语言包 |
+| 英文台词、原声音频 | [League of Legends Wiki](https://wiki.leagueoflegends.com/en-us/)，每条保留修订版本链接和对应音频地址 |
+| 台词中文 | 根据英文编写的**学习译文，不等同于国服官方配音稿** |
+| 音标与词义 | [ECDICT](https://github.com/skywind3000/ECDICT) |
+
+本期是代表语音集，不是全部皮肤、全部游戏内对话。Bard、Rek'Sai 和 Sona 禁用语音中的非语言声音如实标注；纳尔语保留原文，不臆造词义。台词按 Wiki 获取时的修订版本记录，不声称与 Data Dragon 版本的历史配音完全一致。
+
+### 验证与扩充
 
 ```bash
-npm install    # 安装 jsdom（dev 依赖）
-npm run smoke  # 用 jsdom 真实加载页面，跑端到端断言
+npm ci
+npm test          # 全英雄语音覆盖、数据完整性和异常输入
+npm run build    # 官方双语数据、图标、词典和语音一起构建
+npm run smoke    # 真实页面的 jsdom 交互回归
+npm run voices:fetch  # 可选：获取候选台词，不覆盖已整理的译文
 ```
 
-断言覆盖：英雄/装备/符文/召唤师列表渲染、词典查词与词形归并、深链接路由、
-点词弹层、收藏读写、图标可访问、设置生效等。
+测试覆盖语音查词、音标释义、收藏、整句朗读调用、隐藏中文、原声错误提示和全部英雄数据加载，同时检查原有技能、装备、符文、召唤师技能和皮肤功能。jsdom 不实际播放声音。
 
-构建产物里的 `public/data/report.js`、`report.dict.js` 含自检信息
-（标记残留、英文中混入的中文、词典未收录词 Top 榜等），可直接阅读排查。
+词典与内容诊断见 `public/data/report.js` 和 `report.dict.js`。新增英雄缺少语音或条目缺少译文时，构建会报错。升级版本与补充台词的流程见 [内容维护说明](content/README.md)。
 
-### 功能
-
-- **英雄**：搜索 + 按定位筛选；查看被动与 Q/W/E/R 的中英对照；皮肤缩略图点开看大图
-  - 支持深链接，如 `index.html#/champions/Aatrox` 直达指定英雄（可加书签）
-- **装备**：按类型筛选，展开查看双语描述
-- **符文 / 召唤师技能**：双语对照
-- **生词标注**：生僻词自动高亮；任意英文词点击弹出音标 + 释义 + 考纲标签 + 词频
-- **发音**：浏览器内置语音朗读单词（离线可用）
-- **生词本**：收藏生词，持久保存，可导出 JSON
-- **设置**：隐藏中文（自测模式）、高亮开关、朗读语速、深色/浅色主题
-
-### 目录
-
-```
-scripts/          构建脚本（Node，ESM）
-  ├─ lib/         并发抓取 / 文本清洗 / 生僻词判定
-  └─ smoke-test   端到端冒烟测试
-public/           静态站点；双击 index.html 打开
-  ├─ js/          前端脚本
-  └─ data/        构建产物（自动生成，不入库）
-.cache/           原始下载缓存（自动生成，不入库）
-docs/             截图
+```text
+content/          入库的双语语音、来源与维护说明
+scripts/          内容 / 词典构建、语音抓取和测试
+public/           静态站点，兼容 file://
+  js/             界面、查词、收藏、朗读
+  data/           构建产物（不入库）
+docs/             页面预览
+.cache/           原始下载缓存（不入库）
 ```
 
-### 版权
+## English guide
 
-仅供个人学习使用。游戏内容版权归 Riot Games 所有，遵循其 Legal Jibber Jabber；
-词典数据遵循 ECDICT 自身开源协议。
+### Learn through familiar game moments
 
----
+Choose a champion, read an ability or a pick / ban line, listen to the original audio,
+and click a word to explore its pronunciation and meaning. Save vocabulary for review,
+or hide Chinese translations to test your understanding.
 
-## English
+- **173 champions, 346 representative voice entries**: pick and ban lines with source revisions,
+  original audio and Chinese learning translations.
+- **One learning workflow** across voice lines, abilities and items: phonetics, Chinese definitions,
+  exam tags, frequency, rare-word highlighting, pronunciation and favorites.
+- **Bilingual reference** for passives, Q/W/E/R, items, skins, runes and summoner spells.
+- **Personal study tools**: local vocabulary storage, JSON export, adjustable TTS speed and light / dark themes.
 
-### Highlights
-
-| | |
-|---|---|
-| Bilingual | All in-game text comes **straight from Riot's official data** — no machine translation |
-| Rare-word highlighting | Words are auto-classified by frequency and exam syllabus |
-| Click any word | Phonetic + Chinese definition + exam tag + word frequency |
-| Pronunciation | Built-in browser speech synthesis, works offline |
-| Vocabulary list | Save words locally, export as JSON |
-| No server needed | Just double-click `public/index.html` |
-| Self-test mode | Hide all Chinese to check whether you actually understood the text |
-
-### Data sources
-
-- **[Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon)** — both the
-  `en_US` and `zh_CN` official locale packs. All in-game copy (names, descriptions) is taken
-  **verbatim from the official database, never machine-translated**; we only translate a field
-  ourselves when the official data is missing it.
-- **[ECDICT](https://github.com/skywind3000/ECDICT)** — an open-source English–Chinese dictionary
-  supplying phonetics, definitions, exam tags, word frequency and Collins star ratings.
-
-Pinned patch: DDragon **16.19.1** (173 champions · 253 items · 16 summoner spells · 5 rune trees · 2100+ skins).
+Common function words and proper nouns in body text follow the existing annotation skip rules.
+Missing dictionary entries are labeled explicitly.
 
 ### Quick start
 
-**Requires:** Node.js ≥ 18 and a network connection for the build.
+Building requires Node.js ≥ 18. Tests and candidate fetching use jsdom 30 and require
+Node.js `^22.22.2 || ^24.15.0 || >=26.0.0`.
 
 ```bash
-# 1. One-time build (downloads official data + dictionary, writes local data files)
-npm install --omit=dev   # the build needs a single dependency: csv-parse
+git clone https://github.com/carefreelove/lol-english.git
+cd lol-english
+npm ci --omit=dev
 npm run build
-
-# 2. Open the site
-#    Double-click public/index.html — no server required
 ```
 
-The build output lives in `public/data/` and is **not committed** (it is large), so you need to
-run the build once after cloning.
+Open `public/index.html` directly. No server is required. The default content baseline is
+Data Dragon **16.19.1**. Generated files in `public/data/` are not committed; downloads are
+cached in `.cache/`. Use `npm ci`, `npm test` and `npm run smoke` for development checks.
 
-The build is **resumable**: if it fails partway, re-running skips whatever was already fetched.
-Raw downloads are cached in `.cache/`, so the 65 MB dictionary is only fetched once.
+Built text, icons, dictionary and vocabulary tools work offline. Skin artwork and original
+voice audio require a connection. Browser TTS is separate from the game recording; offline
+availability depends on installed voices.
 
-> Note: small icons are downloaded locally, so the core content works fully offline.
-> Skin splash/loading art is too large to bundle and is hot-linked instead — offline it
-> falls back to a placeholder.
+### Sources and translation policy
 
-### Verification (optional)
+Abilities, items and other game descriptions use Riot's official `en_US` / `zh_CN` Data Dragon
+packs. Voice transcriptions and recording URLs come from League of Legends Wiki, with a
+revision link on each entry. **Chinese voice translations are learning aids, not official
+Chinese voice-over scripts**, and have not received independent human review.
 
-```bash
-npm install    # installs jsdom (dev dependency)
-npm run smoke  # loads the real page under jsdom and runs end-to-end assertions
-```
+This release covers representative pick / ban lines, not every skin or in-game interaction.
+Nonverbal sounds are labeled, and Gnar's fictional language is preserved without invented
+meanings. Wiki voice snapshots and the Data Dragon patch are independent source versions.
 
-Coverage includes list rendering for champions/items/runes/summoner spells, dictionary lookup
-and lemmatization, deep-link routing, the word popover, favorites read/write, icon
-availability, and settings toggles.
+Run `npm run voices:fetch` to create candidates in `.cache/voices-candidates.json`; it never
+overwrites curated translations. See [content maintenance and attribution](content/README.md).
 
-The build also emits `public/data/report.js` and `report.dict.js`, which list leftover markup,
-Chinese text leaking into English fields, and the top words missing from the dictionary.
+## 版权与署名 · Attribution
 
-### Features
+游戏台词、角色与音频版权归 Riot Games。Wiki 台词转录及本项目的学习译文采用
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)，署名为 League of Legends Wiki
+contributors，并保留逐条来源；本项目进行了摘选、结构化、翻译和声音类型标注。
+ECDICT 数据遵循其自身许可。
 
-- **Champions** — search and filter by role; bilingual passives and Q/W/E/R; click a skin
-  thumbnail to enlarge it
-  - Deep links supported, e.g. `index.html#/champions/Aatrox` (bookmarkable)
-- **Items** — filter by tag, expand for the bilingual description
-- **Runes / Summoner spells** — bilingual
-- **Word annotation** — rare words highlighted; click any English word for its phonetic,
-  definition, exam tag and frequency
-- **Pronunciation** — browser speech synthesis, offline
-- **Vocabulary list** — persisted locally, exportable as JSON
-- **Settings** — hide Chinese (self-test mode), toggle highlighting, speech rate, dark/light theme
-
-### Layout
-
-```
-scripts/          Build scripts (Node, ESM)
-  ├─ lib/         Concurrent fetching / text cleaning / rarity rules
-  └─ smoke-test   End-to-end smoke test
-public/           Static site; double-click index.html
-  ├─ js/          Front-end scripts
-  └─ data/        Build output (generated, not committed)
-.cache/           Raw download cache (generated, not committed)
-docs/             Screenshots
-```
-
-### License
-
-For personal study only. Game content is copyright Riot Games, used under their Legal Jibber
-Jabber; dictionary data follows ECDICT's own open-source license.
+LoL English is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games
+or anyone officially involved in producing or managing Riot Games properties. Riot Games and all
+associated properties are trademarks or registered trademarks of Riot Games, Inc.

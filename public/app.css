@@ -167,6 +167,27 @@ main { max-width: 1180px; margin: 0 auto; padding: 20px; }
   margin: 6px 0 0;
 }
 body.hide-zh .zh { display: none; }
+body.hide-zh .zh-inline { display: none; }
+
+/* 原声、英文、译文保持同一阅读顺序，手机上播放器自动换行。 */
+.layout > * { min-width: 0; }
+.top > img { width: 56px; height: 56px; border-radius: 10px; }
+.voice-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.voice-heading h3 { margin: 0; }
+.voice-event { color: var(--teal); font-size: 12px; font-weight: 600; letter-spacing: .5px; }
+.voice-line { padding: 16px 0; border-top: 1px solid var(--line-soft); }
+.voice-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.voice-audio { width: 240px; max-width: 100%; height: 34px; }
+.voice-source { color: var(--gold); font-size: 12px; text-underline-offset: 3px; }
+.voice-credit { margin-bottom: 0; font-size: 11px; }
+.voice-status:empty { display: none; }
+@media (max-width: 600px) {
+  main { padding: 12px; }
+  header { padding: 10px 12px; gap: 10px; }
+  .champ-list { max-height: 30vh; }
+  .voice-audio { width: 100%; }
+  .voice-actions { align-items: flex-start; }
+}
 
 /* ---------------- 单词 ---------------- */
 .w {

@@ -2,10 +2,11 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  DDRAGON, LOCALES, CONCURRENCY, CACHE_DIR, DATA_DIR, PUBLIC_DIR, SR_MAP_ID,
+  DDRAGON, LOCALES, CONCURRENCY, CACHE_DIR, DATA_DIR, PUBLIC_DIR, SR_MAP_ID, CONTENT_VERSION,
 } from './config.mjs';
 import { getJsonCached, mapLimit, downloadCached } from './lib/http.mjs';
 import { clean, findMarkup } from './lib/text.mjs';
+import { loadVoices } from './lib/voices.mjs';
 
 const SPELL_SLOTS = ['Q', 'W', 'E', 'R'];
 const basename = (p) => String(p).split('/').pop();
@@ -54,6 +55,7 @@ export async function buildContent(version) {
   if (!index.en_US?.data || !index.zh_CN?.data) throw new Error('英雄索引下载失败');
 
   const ids = Object.keys(index.en_US.data);
+  const voiceData = await loadVoices(ids);
   const details = {};
   for (const loc of LOCALES) {
     details[loc] = {};
@@ -125,6 +127,8 @@ export async function buildContent(version) {
       titleEn: en.title,
       titleZh: zh.title,
       tags: en.tags || [],
+      icon: iconRef('champion', `${id}.png`),
+      voices: voiceData.champions[id],
       passive,
       spells,
       skins,
@@ -148,6 +152,7 @@ export async function buildContent(version) {
     skinCount += skins.length;
 
     collectEn(passive.descEn);
+    for (const line of detail.voices) collectEn(line.textEn);
     collectEn(en.name);
     collectEn(en.title);
     for (const sp of spells) { collectEn(sp.descEn); collectEn(sp.nameEn); }
@@ -282,6 +287,8 @@ export async function buildContent(version) {
     enTexts,
     counts: {
       champions: championsIndex.length,
+      voiceChampions: championsIndex.length,
+      voiceLines: ids.reduce((n, id) => n + voiceData.champions[id].length, 0),
       spells: champSpellCount,
       skins: skinCount,
       items: items.length,
@@ -297,9 +304,6 @@ export async function buildContent(version) {
 
 // 允许单独运行
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const { getJson } = await import('./lib/http.mjs');
-  const { VERSIONS_URL } = await import('./config.mjs');
-  const [latest] = await getJson(VERSIONS_URL);
-  const r = await buildContent(latest);
+  const r = await buildContent(CONTENT_VERSION);
   console.log('build-content 完成', r.counts);
 }

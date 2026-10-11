@@ -1,13 +1,15 @@
 {
   "name": "lol-english",
   "version": "1.0.0",
-  "description": "英雄联盟英文学习站 —— 中英对照查阅英雄技能/装备/皮肤/召唤师技能/符文，并标注生词",
+  "description": "借英雄联盟学英语：技能、装备与英雄语音中英对照，原声跟读、点词查义、生词收藏",
   "private": true,
   "scripts": {
     "build": "node scripts/build.mjs",
     "build:content": "node scripts/build-content.mjs",
     "build:dict": "node scripts/build-dictionary.mjs",
-    "smoke": "node scripts/smoke-test.mjs"
+    "smoke": "node scripts/smoke-test.mjs",
+    "voices:fetch": "node scripts/fetch-voices.mjs",
+    "test": "node --test scripts/voices.test.mjs"
   },
   "dependencies": {
     "csv-parse": "^5.5.6"

@@ -1,0 +1,3477 @@
+{
+  "schemaVersion": 1,
+  "version": "16.19.1",
+  "scope": "pick-ban",
+  "attribution": "League of Legends Wiki contributors; original dialogue © Riot Games",
+  "license": "CC-BY-SA-3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "champions": {
+    "Aatrox": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Now, hear the silence of annihilation!\"",
+        "textZh": "现在，聆听湮灭的寂静！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aatrox_Select.ogg/Aatrox_Select.ogg.mp3?3a807",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aatrox/Audio?oldid=4045636"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Let me end this!\"",
+        "textZh": "让我终结这一切！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aatrox_Ban.ogg/Aatrox_Ban.ogg.mp3?c392e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aatrox/Audio?oldid=4045636"
+      }
+    ],
+    "Ahri": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A clever fox is never caught.\"",
+        "textZh": "聪明的狐狸从不会被抓住。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ahri_Select.ogg/Ahri_Select.ogg.mp3?9778a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ahri/Audio?oldid=4072774"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You don't have to be afraid of me.\"",
+        "textZh": "你不必害怕我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ahri_Ban.ogg/Ahri_Ban.ogg.mp3?2c04f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ahri/Audio?oldid=4072774"
+      }
+    ],
+    "Akali": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fear the assassin with no master.\"",
+        "textZh": "畏惧这位不受任何主人支配的刺客吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Akali_Select.ogg/Akali_Select.ogg.mp3?27e29",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Akali/Audio?oldid=4078832"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You're scared, good to know.\"",
+        "textZh": "你害怕了，很好，我知道了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Akali_Ban.ogg/Akali_Ban.ogg.mp3?9a8d2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Akali/Audio?oldid=4078832"
+      }
+    ],
+    "Akshan": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fixing the world, one scoundrel at a time!\"",
+        "textZh": "一次解决一个恶棍，让世界变得更好！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Akshan_Select.ogg/Akshan_Select.ogg.mp3?95bc4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Akshan/Audio?oldid=4035582"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'm going to remember this.\"",
+        "textZh": "这件事我会记住的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Akshan_Ban.ogg/Akshan_Ban.ogg.mp3?69ded",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Akshan/Audio?oldid=4035582"
+      }
+    ],
+    "Alistar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Nothing can hold me back!\"",
+        "textZh": "没有什么能阻挡我！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Alistar_Select.ogg/Alistar_Select.ogg.mp3?7c47b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Alistar/Audio?oldid=4020310"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Now I'm angry.\"",
+        "textZh": "现在我生气了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Alistar_Ban.ogg/Alistar_Ban.ogg.mp3?95bc4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Alistar/Audio?oldid=4020310"
+      }
+    ],
+    "Ambessa": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A wolf has no mercy.\"",
+        "textZh": "狼不会心慈手软。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ambessa_Select.ogg/Ambessa_Select.ogg.mp3?84ccb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ambessa/Audio?oldid=4052672"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"The Medardas do not forgive, or forget.\"",
+        "textZh": "米达尔达家族既不宽恕，也不遗忘。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ambessa_Ban.ogg/Ambessa_Ban.ogg.mp3?252eb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ambessa/Audio?oldid=4052672"
+      }
+    ],
+    "Amumu": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I thought you'd never pick me.\"",
+        "textZh": "我还以为你永远不会选我呢。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Amumu_Select.ogg/Amumu_Select.ogg.mp3?00cea",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Amumu/Audio?oldid=4029822"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Aww.\"",
+        "textZh": "唉。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Amumu_Ban.ogg/Amumu_Ban.ogg.mp3?6deb9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Amumu/Audio?oldid=4029822"
+      }
+    ],
+    "Anivia": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"On my wings.\"",
+        "textZh": "乘上我的双翼。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Anivia_Select.ogg/Anivia_Select.ogg.mp3?1dd67",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Anivia/Audio?oldid=4067207"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I shall endure.\"",
+        "textZh": "我会坚持下去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Anivia_Ban.ogg/Anivia_Ban.ogg.mp3?39b7f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Anivia/Audio?oldid=4067207"
+      }
+    ],
+    "Annie": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You wanna play too? It'll be fun!\"",
+        "textZh": "你也想一起玩吗？会很好玩的！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Annie_Select.ogg/Annie_Select.ogg.mp3?200f3",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Annie/Audio?oldid=4061176"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I want a turn!\"",
+        "textZh": "该轮到我了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Annie_Ban.ogg/Annie_Ban.ogg.mp3?1dd67",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Annie/Audio?oldid=4061176"
+      }
+    ],
+    "Aphelios": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"So many weapons, Aphelios. The deadliest is your faith.\"",
+        "textZh": "这么多武器，厄斐琉斯。其中最致命的，是你的信仰。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aphelios_Select.ogg/Aphelios_Select.ogg.mp3?1c20b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aphelios/Audio?oldid=4022616"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Condemned to darkness, where our power grows.\"",
+        "textZh": "被放逐到黑暗之中，而我们的力量在那里不断壮大。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aphelios_Ban.ogg/Aphelios_Ban.ogg.mp3?7de8e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aphelios/Audio?oldid=4022616"
+      }
+    ],
+    "Ashe": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"All the world on one arrow.\"",
+        "textZh": "整个世界，系于一箭。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ashe_Select.ogg/Ashe_Select.ogg.mp3?cf6c6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ashe/Audio?oldid=4057927"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Coward! May you die with your eyes closed.\"",
+        "textZh": "懦夫！愿你死时双目紧闭。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ashe_Ban.ogg/Ashe_Ban.ogg.mp3?7e7d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ashe/Audio?oldid=4057927"
+      }
+    ],
+    "AurelionSol": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Naturally.\"",
+        "textZh": "那是自然。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aurelion_Sol_Select.ogg/Aurelion_Sol_Select.ogg.mp3?88f23",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aurelion_Sol/Audio?oldid=4016693"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Hmph. Tragic.\"",
+        "textZh": "哼。真可悲。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aurelion_Sol_Ban.ogg/Aurelion_Sol_Ban.ogg.mp3?b300a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aurelion_Sol/Audio?oldid=4016693"
+      }
+    ],
+    "Aurora": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"See with eyes unclouded.\"",
+        "textZh": "用不受蒙蔽的双眼去看。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aurora_Select.ogg/Aurora_Select.ogg.mp3?df1a6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aurora/Audio?oldid=4009181"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'd rather be home anyway.\"",
+        "textZh": "反正我更想待在家里。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Aurora_Ban.ogg/Aurora_Ban.ogg.mp3?e6a63",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Aurora/Audio?oldid=4009181"
+      }
+    ],
+    "Azir": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Shurima! Your emperor has returned!\"",
+        "textZh": "恕瑞玛！你们的皇帝回来了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Azir_Select.ogg/Azir_Select.ogg.mp3?f2736",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Azir/Audio?oldid=3854410"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Your emperor shall return.\"",
+        "textZh": "你们的皇帝终将归来。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Azir_Ban.ogg/Azir_Ban.ogg.mp3?d2b5e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Azir/Audio?oldid=3854410"
+      }
+    ],
+    "Bard": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "Bard chimes.",
+        "textZh": "巴德发出风铃般的鸣响。（非语言声音）",
+        "nonverbal": true,
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Bard_Select.ogg/Bard_Select.ogg.mp3?c898f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Bard/Audio?oldid=4047252"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "Bard chimes.",
+        "textZh": "巴德发出风铃般的鸣响。（非语言声音）",
+        "nonverbal": true,
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Bard_Ban.ogg/Bard_Ban.ogg.mp3?eab1d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Bard/Audio?oldid=4047252"
+      }
+    ],
+    "Belveth": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I am the voice of the silence.\"",
+        "textZh": "我是寂静之声。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Bel%27Veth_Select.ogg/Bel%27Veth_Select.ogg.mp3?50bd7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Bel'Veth/Audio?oldid=3861774"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"We will be waiting.\"",
+        "textZh": "我们会等着。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Bel%27Veth_Ban.ogg/Bel%27Veth_Ban.ogg.mp3?c5ee7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Bel'Veth/Audio?oldid=3861774"
+      }
+    ],
+    "Blitzcrank": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fired up and ready to serve.\"",
+        "textZh": "动力全开，随时为您效劳。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Blitzcrank_Select.ogg/Blitzcrank_Select.ogg.mp3?45eda",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Blitzcrank/Audio?oldid=4049021"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Bone is a poor alternative.\"",
+        "textZh": "骨骼可不是什么好替代品。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Blitzcrank_Ban.ogg/Blitzcrank_Ban.ogg.mp3?50bd7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Blitzcrank/Audio?oldid=4049021"
+      }
+    ],
+    "Brand": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Ready to set the world on fire? Heheheh...\"",
+        "textZh": "准备好让世界燃烧了吗？嘿嘿嘿……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Brand_Select.ogg/Brand_Select.ogg.mp3?b02ff",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Brand/Audio?oldid=3955997"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Going.\"",
+        "textZh": "这就走。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Brand_Ban.ogg/Brand_Ban.ogg.mp3?dfd9b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Brand/Audio?oldid=3955997"
+      }
+    ],
+    "Braum": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The heart is the strongest muscle.\"",
+        "textZh": "心脏是最强壮的肌肉。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Braum_Select.ogg/Braum_Select.ogg.mp3?94e8f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Braum/Audio?oldid=4012972"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Think carefully, my friend.\"",
+        "textZh": "想清楚，我的朋友。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Braum_Ban.ogg/Braum_Ban.ogg.mp3?9d1b2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Braum/Audio?oldid=4012972"
+      }
+    ],
+    "Briar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Nice to meet you! I'm hungry. I mean... Briar!\"",
+        "textZh": "很高兴认识你！我叫饿了。不对……我叫贝蕾亚！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Briar_Select.ogg/Briar_Select.ogg.mp3?28ef2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Briar/Audio?oldid=3989039"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Ahh... Is this what people call 'strategy'?\"",
+        "textZh": "啊……这就是人们说的“策略”吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Briar_Ban.ogg/Briar_Ban.ogg.mp3?94e8f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Briar/Audio?oldid=3989039"
+      }
+    ],
+    "Caitlyn": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I'm on the case.\"",
+        "textZh": "这个案子交给我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Caitlyn_Select.ogg/Caitlyn_Select.ogg.mp3?aff61",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Caitlyn/Audio?oldid=4030402"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Shall I turn in my badge and rifle as well?\"",
+        "textZh": "要我连警徽和步枪也一起上交吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Caitlyn_Ban.ogg/Caitlyn_Ban.ogg.mp3?ee754",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Caitlyn/Audio?oldid=4030402"
+      }
+    ],
+    "Camille": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Precision is the difference between a butcher and a surgeon.\"",
+        "textZh": "精准，是屠夫与外科医生之间的区别。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Camille_Select.ogg/Camille_Select.ogg.mp3?d3158",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Camille/Audio?oldid=4025057"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I will wait for you to be better.\"",
+        "textZh": "我会等你变得更好。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Camille_Ban.ogg/Camille_Ban.ogg.mp3?5e532",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Camille/Audio?oldid=4025057"
+      }
+    ],
+    "Cassiopeia": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"There is no antidote for me.\"",
+        "textZh": "我的毒，无药可解。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Cassiopeia_Select.ogg/Cassiopeia_Select.ogg.mp3?fc505",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Cassiopeia/Audio?oldid=3852346"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Think what I could offer.\"",
+        "textZh": "想想我能为你带来什么。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Cassiopeia_Ban.ogg/Cassiopeia_Ban.ogg.mp3?d1233",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Cassiopeia/Audio?oldid=3852346"
+      }
+    ],
+    "Chogath": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You'd wish the world you know to end! Yeeeesssss...\"",
+        "textZh": "你会希望自己所知的世界走向终结！没错……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Cho%27Gath_Select.ogg/Cho%27Gath_Select.ogg.mp3?d20d8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Cho'Gath/Audio?oldid=3994858"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Afraid of the dark? Wise!\"",
+        "textZh": "怕黑吗？明智之举！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Cho%27Gath_Ban.ogg/Cho%27Gath_Ban.ogg.mp3?52396",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Cho'Gath/Audio?oldid=3994858"
+      }
+    ],
+    "Corki": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I'm up to snuff, and gots me an ace machine!\"",
+        "textZh": "我状态一流，还开着一架王牌战机！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Corki_Select.ogg/Corki_Select.ogg.mp3?bd8fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Corki/Audio?oldid=4015255"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"That just goes to show you you're nothin' but a Whiskey Delta!\"",
+        "textZh": "这正说明，你不过是个 Whiskey Delta！（用字母代号挖苦对方是窝囊废。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Corki_Ban.ogg/Corki_Ban.ogg.mp3?3219c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Corki/Audio?oldid=4015255"
+      }
+    ],
+    "Darius": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"They will regret opposing me.\"",
+        "textZh": "他们会后悔与我为敌。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Darius_Select.ogg/Darius_Select.ogg.mp3?62a76",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Darius/Audio?oldid=4016694"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I do not tolerate cowardice.\"",
+        "textZh": "我绝不容忍怯懦。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Darius_Ban.ogg/Darius_Ban.ogg.mp3?eb094",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Darius/Audio?oldid=4016694"
+      }
+    ],
+    "Diana": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A new moon is rising.\"",
+        "textZh": "一轮新月正在升起。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Diana_Select.ogg/Diana_Select.ogg.mp3?3a61d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Diana/Audio?oldid=4059024"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Ignorant thralls!\"",
+        "textZh": "无知的奴仆！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Diana_Ban.ogg/Diana_Ban.ogg.mp3?23917",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Diana/Audio?oldid=4059024"
+      }
+    ],
+    "Draven": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Welcome to the League of Draven.\"",
+        "textZh": "欢迎来到德莱文联盟。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Draven_Select.ogg/Draven_Select.ogg.mp3?38244",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Draven/Audio?oldid=3931730"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Draven out!\"",
+        "textZh": "德莱文退场！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Draven_Ban.ogg/Draven_Ban.ogg.mp3?12ad3",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Draven/Audio?oldid=3931730"
+      }
+    ],
+    "DrMundo": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The doctor is... uh... in!\"",
+        "textZh": "医生……呃……来坐诊了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Dr._Mundo_Select.ogg/Dr._Mundo_Select.ogg.mp3?f96d2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Dr._Mundo/Audio?oldid=4068129"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Me charge cancellation fee.\"",
+        "textZh": "俺要收取消预约费。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Dr._Mundo_Ban.ogg/Dr._Mundo_Ban.ogg.mp3?dc813",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Dr._Mundo/Audio?oldid=4068129"
+      }
+    ],
+    "Ekko": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"It's not how much time you have, it's how you use it.\"",
+        "textZh": "重要的不是你有多少时间，而是你如何使用它。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ekko_Select.ogg/Ekko_Select.ogg.mp3?04e20",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ekko/Audio?oldid=3958897"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You used to be cool.\"",
+        "textZh": "你以前还挺酷的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ekko_Ban.ogg/Ekko_Ban.ogg.mp3?4958a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ekko/Audio?oldid=3958897"
+      }
+    ],
+    "Elise": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Only the spider is safe in her web.\"",
+        "textZh": "在她的蛛网中，只有蜘蛛自己是安全的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Elise_Select.ogg/Elise_Select.ogg.mp3?6ce03",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Elise/Audio?oldid=3931732"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Weak-willed fools!\"",
+        "textZh": "意志薄弱的蠢货！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Elise_Ban.ogg/Elise_Ban.ogg.mp3?80e7c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Elise/Audio?oldid=3931732"
+      }
+    ],
+    "Evelynn": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You know you want me.\"",
+        "textZh": "你知道自己想要我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Evelynn_Select.ogg/Evelynn_Select.ogg.mp3?77bc2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Evelynn/Audio?oldid=4019666"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Once again, a woman's left unsatisfied.\"",
+        "textZh": "又一次，让女人失望了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Evelynn_Ban.ogg/Evelynn_Ban.ogg.mp3?cef81",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Evelynn/Audio?oldid=4019666"
+      }
+    ],
+    "Ezreal": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Quest accepted! ...Wait, where are we going?\"",
+        "textZh": "任务接受！……等等，我们要去哪儿？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ezreal_Select.ogg/Ezreal_Select.ogg.mp3?5f542",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ezreal/Audio?oldid=3958938"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Hey, your loss. But I get it.\"",
+        "textZh": "嘿，这是你的损失。不过我理解。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ezreal_Ban.ogg/Ezreal_Ban.ogg.mp3?b4739",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ezreal/Audio?oldid=3958938"
+      }
+    ],
+    "Fiddlesticks": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fear…\"",
+        "textZh": "恐惧……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fiddlesticks_Select.ogg/Fiddlesticks_Select.ogg.mp3?1b71b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fiddlesticks/Audio?oldid=4074728"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Afraid…\"",
+        "textZh": "害怕……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fiddlesticks_Ban.ogg/Fiddlesticks_Ban.ogg.mp3?72d5c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fiddlesticks/Audio?oldid=4074728"
+      }
+    ],
+    "Fiora": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I long for a worthy opponent.\"",
+        "textZh": "我渴望一个旗鼓相当的对手。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fiora_Select.ogg/Fiora_Select.ogg.mp3?67eee",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fiora/Audio?oldid=3852317"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Poor form!\"",
+        "textZh": "真没风度！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fiora_Ban.ogg/Fiora_Ban.ogg.mp3?5086e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fiora/Audio?oldid=3852317"
+      }
+    ],
+    "Fizz": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let me at 'em!\"",
+        "textZh": "让我来对付他们！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fizz_Select.ogg/Fizz_Select.ogg.mp3?e742b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fizz/Audio?oldid=4027193"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"To the briny deep.\"",
+        "textZh": "到咸涩的深海去吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Fizz_Ban.ogg/Fizz_Ban.ogg.mp3?af9b1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Fizz/Audio?oldid=4027193"
+      }
+    ],
+    "Galio": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Time to make an impact!\"",
+        "textZh": "是时候来一场震撼冲击了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Galio_Select.ogg/Galio_Select.ogg.mp3?5bd64",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Galio/Audio?oldid=4044894"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Back to sleep, then...\"",
+        "textZh": "那就……接着睡吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Galio_Ban.ogg/Galio_Ban.ogg.mp3?2da8f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Galio/Audio?oldid=4044894"
+      }
+    ],
+    "Gangplank": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Neither the flames nor the depths could claim me.\"",
+        "textZh": "烈焰与深海，都没能夺走我的命。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gangplank_Select.ogg/Gangplank_Select.ogg.mp3?1f719",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gangplank/Audio?oldid=3931738"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'll come back stronger.\"",
+        "textZh": "我会以更强的姿态归来。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gangplank_Ban.ogg/Gangplank_Ban.ogg.mp3?4e027",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gangplank/Audio?oldid=3931738"
+      }
+    ],
+    "Garen": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"My heart and sword always for Demacia.\"",
+        "textZh": "我的心与剑，永远属于德玛西亚。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Garen_Select.ogg/Garen_Select.ogg.mp3?b7434",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Garen/Audio?oldid=4002243"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Fear is the first of many foes.\"",
+        "textZh": "恐惧，是众多敌人中的第一个。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Garen_Ban.ogg/Garen_Ban.ogg.mp3?1f719",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Garen/Audio?oldid=4002243"
+      }
+    ],
+    "Gnar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Gnar gada!\"",
+        "textZh": "“Gnar gada！”（纳尔语，保留原声，不臆造词义。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gnar_Select.ogg/Gnar_Select.ogg.mp3?d3859",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gnar/Audio?oldid=3994862",
+        "fictionalLanguage": true
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Shubbanuffa.\"",
+        "textZh": "“Shubbanuffa。”（纳尔语，保留原声，不臆造词义。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gnar_Ban.ogg/Gnar_Ban.ogg.mp3?7ff48",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gnar/Audio?oldid=3994862",
+        "fictionalLanguage": true
+      }
+    ],
+    "Gragas": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"If you're buying, I'm in!\"",
+        "textZh": "你请客，我就来！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gragas_Select.ogg/Gragas_Select.ogg.mp3?dfc09",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gragas/Audio?oldid=4059213"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Yeah, yeah...\"",
+        "textZh": "好吧，好吧……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gragas_Ban.ogg/Gragas_Ban.ogg.mp3?80e30",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gragas/Audio?oldid=4059213"
+      }
+    ],
+    "Graves": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Dead man walkin'.\"",
+        "textZh": "行走的死人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Graves_Select.ogg/Graves_Select.ogg.mp3?73b4f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Graves/Audio?oldid=3984077"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"End of the line.\"",
+        "textZh": "到头了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Graves_Ban.ogg/Graves_Ban.ogg.mp3?dee3d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Graves/Audio?oldid=3984077"
+      }
+    ],
+    "Gwen": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Head high, chin up, scissors ready!\"",
+        "textZh": "昂首挺胸，剪刀就绪！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gwen_Select.ogg/Gwen_Select.ogg.mp3?ce7e1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gwen/Audio?oldid=3861044"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Why not? My scissors don't bite.\"",
+        "textZh": "为什么不呢？我的剪刀又不会咬人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Gwen_Ban.ogg/Gwen_Ban.ogg.mp3?a409b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Gwen/Audio?oldid=3861044"
+      }
+    ],
+    "Hecarim": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Behold, the might of the Shadow Isles.\"",
+        "textZh": "见识一下暗影岛的力量吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Hecarim_Select.ogg/Hecarim_Select.ogg.mp3?3d6c7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Hecarim/Audio?oldid=4023894"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I do not rest.\"",
+        "textZh": "我永不休息。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Hecarim_Ban.ogg/Hecarim_Ban.ogg.mp3?e2a86",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Hecarim/Audio?oldid=4023894"
+      }
+    ],
+    "Heimerdinger": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Indeed, a wise choice.\"",
+        "textZh": "的确，是个明智的选择。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Heimerdinger_Select.ogg/Heimerdinger_Select.ogg.mp3?a4aa5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Heimerdinger/Audio?oldid=4030970"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"How befuddling!\"",
+        "textZh": "真令人费解！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Heimerdinger_Ban.ogg/Heimerdinger_Ban.ogg.mp3?3d6c7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Heimerdinger/Audio?oldid=4030970"
+      }
+    ],
+    "Hwei": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A painter meets their subject eye to eye.\"",
+        "textZh": "画家要与笔下的对象目光相对。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Hwei_Select.ogg/Hwei_Select.ogg.mp3?ccf63",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Hwei/Audio?oldid=3956004"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Art can shed light on our fears.\"",
+        "textZh": "艺术能够照亮我们内心的恐惧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Hwei_Ban.ogg/Hwei_Ban.ogg.mp3?39820",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Hwei/Audio?oldid=3956004"
+      }
+    ],
+    "Illaoi": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I'm not big on sermons—broken bones teach better lessons.\"",
+        "textZh": "我不爱说教——断掉的骨头更能让人长记性。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Illaoi_Select.ogg/Illaoi_Select.ogg.mp3?ec9b1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Illaoi/Audio?oldid=3922117"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Life is too short for fear.\"",
+        "textZh": "人生太短，别浪费在恐惧上。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Illaoi_Ban.ogg/Illaoi_Ban.ogg.mp3?3e778",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Illaoi/Audio?oldid=3922117"
+      }
+    ],
+    "Irelia": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fight for the First Lands!\"",
+        "textZh": "为初生之土而战！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Irelia_Select.ogg/Irelia_Select.ogg.mp3?337d0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Irelia/Audio?oldid=4003468"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Tyrant!\"",
+        "textZh": "暴君！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Irelia_Ban.ogg/Irelia_Ban.ogg.mp3?9239b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Irelia/Audio?oldid=4003468"
+      }
+    ],
+    "Ivern": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"My favorite color is spring.\"",
+        "textZh": "我最喜欢的颜色是春天。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ivern_Select.ogg/Ivern_Select.ogg.mp3?4665f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ivern/Audio?oldid=4051783"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Happy to sit this one out.\"",
+        "textZh": "这回坐在一旁休息，我也很乐意。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ivern_Ban.ogg/Ivern_Ban.ogg.mp3?4c179",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ivern/Audio?oldid=4051783"
+      }
+    ],
+    "Janna": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The tempest is at your command.\"",
+        "textZh": "风暴听候你的差遣。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Janna_Select.ogg/Janna_Select.ogg.mp3?33dcd",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Janna/Audio?oldid=4060965"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"As you wish.\"",
+        "textZh": "如你所愿。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Janna_Ban.ogg/Janna_Ban.ogg.mp3?4665f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Janna/Audio?oldid=4060965"
+      }
+    ],
+    "JarvanIV": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"By my will, this shall be finished.\"",
+        "textZh": "以我的意志，终结此事。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jarvan_IV_Select.ogg/Jarvan_IV_Select.ogg.mp3?ab399",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jarvan_IV/Audio?oldid=3969217"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Who dares defy my will?\"",
+        "textZh": "谁敢违抗我的意志？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jarvan_IV_Ban.ogg/Jarvan_IV_Ban.ogg.mp3?33dcd",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jarvan_IV/Audio?oldid=3969217"
+      }
+    ],
+    "Jax": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let's do this.\"",
+        "textZh": "开始吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jax_Select.ogg/Jax_Select.ogg.mp3?62aa3",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jax/Audio?oldid=4053178"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Let me at 'em.\"",
+        "textZh": "让我来对付他们。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jax_Ban.ogg/Jax_Ban.ogg.mp3?6b94e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jax/Audio?oldid=4053178"
+      }
+    ],
+    "Jayce": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I fight for a brighter tomorrow.\"",
+        "textZh": "我为更光明的明天而战。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jayce_Select.ogg/Jayce_Select.ogg.mp3?6ba1f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jayce/Audio?oldid=3973639"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Never look back.\"",
+        "textZh": "永不回头。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jayce_Ban.ogg/Jayce_Ban.ogg.mp3?aa6ef",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jayce/Audio?oldid=3973639"
+      }
+    ],
+    "Jhin": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"In carnage, I bloom, like a flower in the dawn.\"",
+        "textZh": "我在杀戮中绽放，如同黎明中的花朵。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jhin_Select.ogg/Jhin_Select.ogg.mp3?76665",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jhin/Audio?oldid=4058994"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"My genius will be understood—eventually.\"",
+        "textZh": "我的天才终将得到理解。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jhin_Ban.ogg/Jhin_Ban.ogg.mp3?6ba1f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jhin/Audio?oldid=4058994"
+      }
+    ],
+    "Jinx": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Rules are made to be broken… like buildings! Or people!\"",
+        "textZh": "规则就是用来打破的……就像建筑！或者人！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jinx_Select.ogg/Jinx_Select.ogg.mp3?66583",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jinx/Audio?oldid=4056419"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Aww, c'mon, what's the worst that could happen?\"",
+        "textZh": "哎呀，拜托，能出什么大乱子呢？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Jinx_Ban.ogg/Jinx_Ban.ogg.mp3?0be8f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Jinx/Audio?oldid=4056419"
+      }
+    ],
+    "Kaisa": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Are you the hunter… or the prey?\"",
+        "textZh": "你是猎人……还是猎物？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kai%27Sa_Select.ogg/Kai%27Sa_Select.ogg.mp3?f9ad1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kai'Sa/Audio?oldid=4010511"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You wouldn't last a day in the Void.\"",
+        "textZh": "你在虚空里连一天都撑不过去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kai%27Sa_Ban.ogg/Kai%27Sa_Ban.ogg.mp3?01a19",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kai'Sa/Audio?oldid=4010511"
+      }
+    ],
+    "Kalista": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Death to all betrayers.\"",
+        "textZh": "背叛者皆当死。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kalista_Select.ogg/Kalista_Select.ogg.mp3?e30da",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kalista/Audio?oldid=4057546"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"All things have consequence.\"",
+        "textZh": "凡事皆有后果。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kalista_Ban.ogg/Kalista_Ban.ogg.mp3?78dd4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kalista/Audio?oldid=4057546"
+      }
+    ],
+    "Karma": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Always trust your spirit.\"",
+        "textZh": "永远相信你的内心。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Karma_Select.ogg/Karma_Select.ogg.mp3?ac9f8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Karma/Audio?oldid=4052373"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"We must all make our choices.\"",
+        "textZh": "我们都必须作出自己的选择。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Karma_Ban.ogg/Karma_Ban.ogg.mp3?e30da",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Karma/Audio?oldid=4052373"
+      }
+    ],
+    "Karthus": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Agony, ecstasy, peace. Every passing has a beauty all its own.\"",
+        "textZh": "痛苦、狂喜、安宁。每一次逝去，都有它独特的美。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Karthus_Select.ogg/Karthus_Select.ogg.mp3?8f0a5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Karthus/Audio?oldid=4058570"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Ah, the kiss of death.\"",
+        "textZh": "啊，死亡之吻。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Karthus_Ban.ogg/Karthus_Ban.ogg.mp3?34758",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Karthus/Audio?oldid=4058570"
+      }
+    ],
+    "Kassadin": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The balance of power must be preserved.\"",
+        "textZh": "力量的平衡必须维持。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kassadin_Select.ogg/Kassadin_Select.ogg.mp3?5b1e8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kassadin/Audio?oldid=4018144"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"As you wish.\"",
+        "textZh": "如你所愿。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kassadin_Ban.ogg/Kassadin_Ban.ogg.mp3?67bab",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kassadin/Audio?oldid=4018144"
+      }
+    ],
+    "Katarina": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Violence solves everything.\"",
+        "textZh": "暴力能解决一切。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Katarina_Select.ogg/Katarina_Select.ogg.mp3?a6e59",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Katarina/Audio?oldid=4015258"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Is that fear I smell?\"",
+        "textZh": "我闻到的，是恐惧吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Katarina_Ban.ogg/Katarina_Ban.ogg.mp3?5b1e8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Katarina/Audio?oldid=4015258"
+      }
+    ],
+    "Kayle": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"They shall tremble at my perfection.\"",
+        "textZh": "他们将在我的完美面前颤抖。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kayle_Select.ogg/Kayle_Select.ogg.mp3?f11f5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kayle/Audio?oldid=4030661"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I see you lack judgement.\"",
+        "textZh": "看来你缺乏判断力。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kayle_Ban.ogg/Kayle_Ban.ogg.mp3?27f77",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kayle/Audio?oldid=4030661"
+      }
+    ],
+    "Kayn": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Will you prove worthy?\"\n\"Probably not.\"",
+        "textZh": "你能证明自己配得上吗？\n大概不能。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kayn_Select.ogg/Kayn_Select.ogg.mp3?cdf7c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kayn/Audio?oldid=4041741"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"The weak fear the shadows.\"\n\"Fear controls them.\"",
+        "textZh": "弱者畏惧暗影。\n恐惧支配着他们。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kayn_Ban.ogg/Kayn_Ban.ogg.mp3?99220",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kayn/Audio?oldid=4041741"
+      }
+    ],
+    "Kennen": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The eyes never lie.\"",
+        "textZh": "眼睛从不说谎。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kennen_Select.ogg/Kennen_Select.ogg.mp3?dd7fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kennen/Audio?oldid=3913930"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"A silent death!\"",
+        "textZh": "无声的死亡！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kennen_Ban.ogg/Kennen_Ban.ogg.mp3?4be3b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kennen/Audio?oldid=3913930"
+      }
+    ],
+    "Khazix": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Change... is good.\"",
+        "textZh": "改变……是好事。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kha%27Zix_Select.ogg/Kha%27Zix_Select.ogg.mp3?91df0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kha'Zix/Audio?oldid=3852305"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"They fear me.\"",
+        "textZh": "他们怕我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kha%27Zix_Ban.ogg/Kha%27Zix_Ban.ogg.mp3?dd7fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kha'Zix/Audio?oldid=3852305"
+      }
+    ],
+    "Kindred": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "Lamb: \"Never one…\"\nWolf: \"…without the other.\"",
+        "textZh": "羊灵：从不孤身……\n狼灵：……彼此相伴。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kindred_Select.ogg/Kindred_Select.ogg.mp3?301ec",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kindred/Audio?oldid=4044055"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "Lamb: \"You overstep.\"",
+        "textZh": "羊灵：你越界了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kindred_Ban.ogg/Kindred_Ban.ogg.mp3?91df0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kindred/Audio?oldid=4044055"
+      }
+    ],
+    "Kled": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I find courage unpredictable. It's total insanity you can rely on!\"",
+        "textZh": "勇气这东西靠不住。你能依靠的，是彻头彻尾的疯狂！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kled_Select.ogg/Kled_Select.ogg.mp3?2b158",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kled/Audio?oldid=4062877"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Oh, I knew you was all yeller!\"",
+        "textZh": "噢，我就知道你们全是胆小鬼！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kled_Ban.ogg/Kled_Ban.ogg.mp3?eb781",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kled/Audio?oldid=4062877"
+      }
+    ],
+    "KogMaw": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Time to feast!\"",
+        "textZh": "开饭时间到了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kog%27Maw_Select.ogg/Kog%27Maw_Select.ogg.mp3?89a19",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kog'Maw/Audio?oldid=3852361"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Hungry never sleep.\"",
+        "textZh": "饥饿从不入眠。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Kog%27Maw_Ban.ogg/Kog%27Maw_Ban.ogg.mp3?c9f47",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Kog'Maw/Audio?oldid=3852361"
+      }
+    ],
+    "KSante": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Better to fight, than to live in fear.\"",
+        "textZh": "宁可奋起战斗，也不要活在恐惧中。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/K%27Sante_Select.ogg/K%27Sante_Select.ogg.mp3?e7dc0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/K'Sante/Audio?oldid=4075136"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Only prey flee.\"",
+        "textZh": "只有猎物才会逃跑。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/K%27Sante_Ban.ogg/K%27Sante_Ban.ogg.mp3?e0871",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/K'Sante/Audio?oldid=4075136"
+      }
+    ],
+    "Leblanc": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The Black Rose shall bloom once more.\"",
+        "textZh": "黑色玫瑰将再度绽放。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/LeBlanc_Select.ogg/LeBlanc_Select.ogg.mp3?6ba69",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/LeBlanc/Audio?oldid=4080338"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I have more important matters to attend to.\"",
+        "textZh": "我还有更重要的事要处理。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/LeBlanc_Ban.ogg/LeBlanc_Ban.ogg.mp3?cb1ab",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/LeBlanc/Audio?oldid=4080338"
+      }
+    ],
+    "LeeSin": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Your will, my hands.\"",
+        "textZh": "你的意志，由我的双手实现。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lee_Sin_Select.ogg/Lee_Sin_Select.ogg.mp3?b9c71",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lee_Sin/Audio?oldid=4044060"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I return to my training.\"",
+        "textZh": "我回去修炼了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lee_Sin_Ban.ogg/Lee_Sin_Ban.ogg.mp3?eedba",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lee_Sin/Audio?oldid=4044060"
+      }
+    ],
+    "Leona": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The dawn has arrived.\"",
+        "textZh": "黎明已至。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Leona_Select.ogg/Leona_Select.ogg.mp3?48b89",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Leona/Audio?oldid=4060767"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I must not fall.\"",
+        "textZh": "我不能倒下。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Leona_Ban.ogg/Leona_Ban.ogg.mp3?e7161",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Leona/Audio?oldid=4060767"
+      }
+    ],
+    "Lillia": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Me? A dream come true.\"",
+        "textZh": "我吗？美梦成真了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lillia_Select.ogg/Lillia_Select.ogg.mp3?c1b6a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lillia/Audio?oldid=4059089"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"They're scampering from me?\"",
+        "textZh": "他们在躲着我跑吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lillia_Ban.ogg/Lillia_Ban.ogg.mp3?954a7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lillia/Audio?oldid=4059089"
+      }
+    ],
+    "Lissandra": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I will bury the world in ice.\"",
+        "textZh": "我会将世界埋葬于寒冰之中。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lissandra_Select.ogg/Lissandra_Select.ogg.mp3?a2814",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lissandra/Audio?oldid=4040490"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Foolish child.\"",
+        "textZh": "愚蠢的孩子。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lissandra_Ban.ogg/Lissandra_Ban.ogg.mp3?2cbd5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lissandra/Audio?oldid=4040490"
+      }
+    ],
+    "Locke": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Guilt's a sickness, and I've got the cure.\"",
+        "textZh": "罪恶感是一种病，而我有解药。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Locke_Select.ogg/Locke_Select.ogg.mp3?3d407",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Locke/Audio?oldid=4072375"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You got something to hide?\"",
+        "textZh": "你有什么见不得人的事吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Locke_Ban.ogg/Locke_Ban.ogg.mp3?3d407",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Locke/Audio?oldid=4072375"
+      }
+    ],
+    "Lucian": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Everybody dies. Some just need a little help.\"",
+        "textZh": "每个人都会死。有些人只是需要一点帮助。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lucian_Select.ogg/Lucian_Select.ogg.mp3?c49c6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lucian/Audio?oldid=4031773"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You don't have the heart for this.\"",
+        "textZh": "你没有做这件事的胆量。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lucian_Ban.ogg/Lucian_Ban.ogg.mp3?b2705",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lucian/Audio?oldid=4031773"
+      }
+    ],
+    "Lulu": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Pleased to meet you!\"",
+        "textZh": "很高兴认识你！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lulu_Select.ogg/Lulu_Select.ogg.mp3?e8183",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lulu/Audio?oldid=4034529"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I recommend skipping.\"",
+        "textZh": "我建议跳过去。（skipping 既可指蹦跳，也可指跳过。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lulu_Ban.ogg/Lulu_Ban.ogg.mp3?a3fe0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lulu/Audio?oldid=4034529"
+      }
+    ],
+    "Lux": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let's light it up!\"",
+        "textZh": "让我们点亮这里！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lux_Select.ogg/Lux_Select.ogg.mp3?70b98",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lux/Audio?oldid=4021977"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"But all my light puns would've brightened your day.\"",
+        "textZh": "可是，我那些光的双关笑话，本能让你的一天更明亮。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Lux_Ban.ogg/Lux_Ban.ogg.mp3?77c3b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Lux/Audio?oldid=4021977"
+      }
+    ],
+    "Malphite": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Rock solid.\"",
+        "textZh": "坚如磐石。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Malphite_Select.ogg/Malphite_Select.ogg.mp3?dcd5b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Malphite/Audio?oldid=3994865"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You will lose.\"",
+        "textZh": "你会输的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Malphite_Ban.ogg/Malphite_Ban.ogg.mp3?2c20f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Malphite/Audio?oldid=3994865"
+      }
+    ],
+    "Malzahar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Oblivion awaits!\"",
+        "textZh": "湮灭在等着你！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Malzahar_Select.ogg/Malzahar_Select.ogg.mp3?0202d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Malzahar/Audio?oldid=3852363"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"It is done.\"",
+        "textZh": "已成定局。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Malzahar_Ban.ogg/Malzahar_Ban.ogg.mp3?fd67e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Malzahar/Audio?oldid=3852363"
+      }
+    ],
+    "Maokai": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The Isles will bloom again!\"",
+        "textZh": "群岛会再次繁盛！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Maokai_Select.ogg/Maokai_Select.ogg.mp3?612f7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Maokai/Audio?oldid=3852342"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Your reckoning will come either way.\"",
+        "textZh": "无论如何，你的清算之日都会到来。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Maokai_Ban.ogg/Maokai_Ban.ogg.mp3?83816",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Maokai/Audio?oldid=3852342"
+      }
+    ],
+    "MasterYi": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"My blade is yours.\"",
+        "textZh": "我的剑，为你而战。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Master_Yi_Select.ogg/Master_Yi_Select.ogg.mp3?e9a71",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Master_Yi/Audio?oldid=4015195"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Doubt is the greatest enemy.\"",
+        "textZh": "怀疑是最大的敌人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Master_Yi_Ban.ogg/Master_Yi_Ban.ogg.mp3?0f3f6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Master_Yi/Audio?oldid=4015195"
+      }
+    ],
+    "Mel": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Shatter their expectations.\"",
+        "textZh": "打破他们的预想。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Mel_Select.ogg/Mel_Select.ogg.mp3?e7001",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Mel/Audio?oldid=4067208"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"My countermeasures are ready. Even if you are not.\"",
+        "textZh": "我的应对之策已经就绪，即便你还没有准备好。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Mel_Ban.ogg/Mel_Ban.ogg.mp3?4833e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Mel/Audio?oldid=4067208"
+      }
+    ],
+    "Milio": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Stick with me! I'll keep you warm.\" Fuemigo cheers.",
+        "textZh": "跟着我！我会让你暖和起来。（火灵欢呼。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Milio_Select.ogg/Milio_Select.ogg.mp3?c6276",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Milio/Audio?oldid=4044883"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"What's wrong? Can't take the heat?\"",
+        "textZh": "怎么了？受不了这股热劲儿吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Milio_Ban.ogg/Milio_Ban.ogg.mp3?dd42f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Milio/Audio?oldid=4044883"
+      }
+    ],
+    "MissFortune": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fortune doesn't favor fools.\"",
+        "textZh": "好运不会眷顾傻瓜。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Miss_Fortune_Select.ogg/Miss_Fortune_Select.ogg.mp3?689a1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Miss_Fortune/Audio?oldid=4036563"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Not a problem.\"",
+        "textZh": "没问题。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Miss_Fortune_Ban.ogg/Miss_Fortune_Ban.ogg.mp3?c6276",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Miss_Fortune/Audio?oldid=4036563"
+      }
+    ],
+    "MonkeyKing": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I will be the best.\"",
+        "textZh": "我会成为最强的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Wukong_Select.ogg/Wukong_Select.ogg.mp3?b7def",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Wukong/Audio?oldid=4024311"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Who questions my ability?\"",
+        "textZh": "谁在质疑我的本事？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Wukong_Ban.ogg/Wukong_Ban.ogg.mp3?d81a8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Wukong/Audio?oldid=4024311"
+      }
+    ],
+    "Mordekaiser": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Destiny. Domination. Deceit.\"",
+        "textZh": "命运。支配。欺骗。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Mordekaiser_Select.ogg/Mordekaiser_Select.ogg.mp3?90f22",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Mordekaiser/Audio?oldid=4070498"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"None can escape me.\"",
+        "textZh": "没人能逃出我的手掌。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Mordekaiser_Ban.ogg/Mordekaiser_Ban.ogg.mp3?70c53",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Mordekaiser/Audio?oldid=4070498"
+      }
+    ],
+    "Morgana": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I am bound, but I will not break.\"",
+        "textZh": "我虽被束缚，却不会折服。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Morgana_Select.ogg/Morgana_Select.ogg.mp3?1e3b7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Morgana/Audio?oldid=4081048"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Your worst decisions will haunt you.\"",
+        "textZh": "你最糟糕的决定会一直纠缠着你。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Morgana_Ban.ogg/Morgana_Ban.ogg.mp3?cb99c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Morgana/Audio?oldid=4081048"
+      }
+    ],
+    "Naafiri": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"We give chase!\"",
+        "textZh": "我们开始追猎！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Naafiri_Select.ogg/Naafiri_Select.ogg.mp3?23b18",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Naafiri/Audio?oldid=3943080"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"We won't be muzzled.\"",
+        "textZh": "我们不会任人套上嘴套。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Naafiri_Ban.ogg/Naafiri_Ban.ogg.mp3?8f064",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Naafiri/Audio?oldid=3943080"
+      }
+    ],
+    "Nami": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I decide what the tide will bring.\"",
+        "textZh": "潮汐将带来什么，由我决定。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nami_Select.ogg/Nami_Select.ogg.mp3?2f7d2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nami/Audio?oldid=4031775"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"There's always another wave.\"",
+        "textZh": "总会有下一波浪潮。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nami_Ban.ogg/Nami_Ban.ogg.mp3?eb1a2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nami/Audio?oldid=4031775"
+      }
+    ],
+    "Nasus": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The cycle of life and death continues. We will live, they will die.\"",
+        "textZh": "生与死的轮回仍在继续。我们将生存，他们将死去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nasus_Select.ogg/Nasus_Select.ogg.mp3?67a71",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nasus/Audio?oldid=4034510"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Do not try my patience.\"",
+        "textZh": "不要考验我的耐心。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nasus_Ban.ogg/Nasus_Ban.ogg.mp3?466da",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nasus/Audio?oldid=4034510"
+      }
+    ],
+    "Nautilus": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Beware the depths.\"",
+        "textZh": "当心深海。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nautilus_Select.ogg/Nautilus_Select.ogg.mp3?246b9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nautilus/Audio?oldid=4030965"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I will not rest.\"",
+        "textZh": "我绝不休息。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nautilus_Ban.ogg/Nautilus_Ban.ogg.mp3?2f013",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nautilus/Audio?oldid=4030965"
+      }
+    ],
+    "Neeko": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Neeko is best decision!\"",
+        "textZh": "妮蔻是最好的选择！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Neeko_Select.ogg/Neeko_Select.ogg.mp3?1cf5e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Neeko/Audio?oldid=4023924"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"They cannot handle Neeko.\"",
+        "textZh": "他们应付不了妮蔻。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Neeko_Ban.ogg/Neeko_Ban.ogg.mp3?246b9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Neeko/Audio?oldid=4023924"
+      }
+    ],
+    "Nidalee": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The wild calls. I answer.\"",
+        "textZh": "荒野呼唤，我便回应。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nidalee_Select.ogg/Nidalee_Select.ogg.mp3?5a703",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nidalee/Audio?oldid=3943095"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You are right to fear me!\"",
+        "textZh": "害怕我是对的！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nidalee_Ban.ogg/Nidalee_Ban.ogg.mp3?28578",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nidalee/Audio?oldid=3943095"
+      }
+    ],
+    "Nilah": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Joy, unceasing and forever!\"",
+        "textZh": "喜悦，永不停息，直到永远！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nilah_Select.ogg/Nilah_Select.ogg.mp3?55b41",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nilah/Audio?oldid=3914301"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I don't blame you. I'm quite strong.\"",
+        "textZh": "我不怪你。我确实很强。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nilah_Ban.ogg/Nilah_Ban.ogg.mp3?5a703",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nilah/Audio?oldid=3914301"
+      }
+    ],
+    "Nocturne": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Embrace the darkness.\"",
+        "textZh": "拥抱黑暗吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nocturne_Select.ogg/Nocturne_Select.ogg.mp3?878d8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nocturne/Audio?oldid=3938059"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Afraid of the dark?\"",
+        "textZh": "怕黑吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nocturne_Ban.ogg/Nocturne_Ban.ogg.mp3?24435",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nocturne/Audio?oldid=3938059"
+      }
+    ],
+    "Nunu": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Every adventure is better with a friend!\" (Willump noises) *laughs*",
+        "textZh": "每一场冒险，有朋友相伴都会更精彩！（威朗普发出声音，随后传来笑声。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nunu_Select.ogg/Nunu_Select.ogg.mp3?02f24",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nunu/Audio?oldid=4025158"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"It's okay, we'll play later.\"",
+        "textZh": "没关系，我们待会儿再玩。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Nunu_Ban.ogg/Nunu_Ban.ogg.mp3?878d8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Nunu/Audio?oldid=4025158"
+      }
+    ],
+    "Olaf": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Leave nothing behind!\"",
+        "textZh": "片甲不留！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Olaf_Select.ogg/Olaf_Select.ogg.mp3?95b95",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Olaf/Audio?oldid=3958009"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"C'mon, I won't hurt you. I promise!\"",
+        "textZh": "来嘛，我不会伤害你的。我保证！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Olaf_Ban.ogg/Olaf_Ban.ogg.mp3?56ae8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Olaf/Audio?oldid=3958009"
+      }
+    ],
+    "Orianna": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"We will kill your enemies. That will be fun.\"",
+        "textZh": "我们会杀掉你的敌人。那会很好玩。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Orianna_Select.ogg/Orianna_Select.ogg.mp3?91811",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Orianna/Audio?oldid=4012958"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"The ball is angry.\"",
+        "textZh": "魔偶生气了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Orianna_Ban.ogg/Orianna_Ban.ogg.mp3?95b95",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Orianna/Audio?oldid=4012958"
+      }
+    ],
+    "Ornn": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fine, we go.\"",
+        "textZh": "好吧，走了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ornn_Select.ogg/Ornn_Select.ogg.mp3?0fe8a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ornn/Audio?oldid=4027913"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Back to the forge.\"",
+        "textZh": "回锻炉去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ornn_Ban.ogg/Ornn_Ban.ogg.mp3?a4746",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ornn/Audio?oldid=4027913"
+      }
+    ],
+    "Pantheon": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"In battle, we are reborn.\"",
+        "textZh": "我们在战斗中重生。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Pantheon_Select.ogg/Pantheon_Select.ogg.mp3?5a4c4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Pantheon/Audio?oldid=4075341"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Flee, and the spear will find your back.\"",
+        "textZh": "逃吧，长矛会找到你的后背。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Pantheon_Ban.ogg/Pantheon_Ban.ogg.mp3?2b7ab",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Pantheon/Audio?oldid=4075341"
+      }
+    ],
+    "Poppy": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I'm no hero—just a Yordle with a hammer.\"",
+        "textZh": "我不是什么英雄——只是个拿着锤子的约德尔人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Poppy_Select.ogg/Poppy_Select.ogg.mp3?4a8cc",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Poppy/Audio?oldid=4031640"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Seems you left your brave pants at home. Want me to wait while you go get them?\"",
+        "textZh": "看来你把勇气落在家里了。要我等你回去拿吗？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Poppy_Ban.ogg/Poppy_Ban.ogg.mp3?acb12",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Poppy/Audio?oldid=4031640"
+      }
+    ],
+    "Pyke": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Sink 'em all.\"",
+        "textZh": "把他们全都沉入海底。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Pyke_Select.ogg/Pyke_Select.ogg.mp3?bee47",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Pyke/Audio?oldid=4005796"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"My list just got longer.\"",
+        "textZh": "我的名单又变长了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Pyke_Ban.ogg/Pyke_Ban.ogg.mp3?6607a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Pyke/Audio?oldid=4005796"
+      }
+    ],
+    "Qiyana": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You may now appreciate me.\"",
+        "textZh": "现在，你可以开始欣赏我了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Qiyana_Select.ogg/Qiyana_Select.ogg.mp3?b8a2f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Qiyana/Audio?oldid=3852263"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You are right to fear my greatness.\"",
+        "textZh": "畏惧我的伟大，是明智的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Qiyana_Ban.ogg/Qiyana_Ban.ogg.mp3?bee47",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Qiyana/Audio?oldid=3852263"
+      }
+    ],
+    "Quinn": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Justice takes wing.\"",
+        "textZh": "正义振翅而起。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Quinn_Select.ogg/Quinn_Select.ogg.mp3?4c2fc",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Quinn/Audio?oldid=4014885"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'd keep my head down if I were you.\"",
+        "textZh": "换作是我，就会把头低下。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Quinn_Ban.ogg/Quinn_Ban.ogg.mp3?5f137",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Quinn/Audio?oldid=4014885"
+      }
+    ],
+    "Rakan": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let's dance.\"",
+        "textZh": "来跳舞吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rakan_Select.ogg/Rakan_Select.ogg.mp3?37a18",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rakan/Audio?oldid=4079415"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Seriously? Seriously? Lame.\"",
+        "textZh": "认真的？认真的？真没劲。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rakan_Ban.ogg/Rakan_Ban.ogg.mp3?91252",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rakan/Audio?oldid=4079415"
+      }
+    ],
+    "Rammus": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"OK.\"",
+        "textZh": "好。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rammus_Select.ogg/Rammus_Select.ogg.mp3?c04ee",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rammus/Audio?oldid=3852392"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"OK.\"",
+        "textZh": "好。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rammus_Ban.ogg/Rammus_Ban.ogg.mp3?1f485",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rammus/Audio?oldid=3852392"
+      }
+    ],
+    "RekSai": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "Rek'Sai rasps.",
+        "textZh": "雷克塞发出沙哑的嘶声。（非语言声音）",
+        "nonverbal": true,
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rek%27Sai_Select.ogg/Rek%27Sai_Select.ogg.mp3?1b2d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rek'Sai/Audio?oldid=3852287"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "Rek'Sai snarls.",
+        "textZh": "雷克塞发出低沉的咆哮。（非语言声音）",
+        "nonverbal": true,
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rek%27Sai_Ban.ogg/Rek%27Sai_Ban.ogg.mp3?fb81e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rek'Sai/Audio?oldid=3852287"
+      }
+    ],
+    "Rell": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Nothing gets in, no one gets out.\"",
+        "textZh": "什么也进不来，谁也别想出去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rell_Select.ogg/Rell_Select.ogg.mp3?3a81c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rell/Audio?oldid=4044939"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Weak.\"",
+        "textZh": "软弱。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rell_Ban.ogg/Rell_Ban.ogg.mp3?1b2d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rell/Audio?oldid=4044939"
+      }
+    ],
+    "Renata": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"It's 'Miss Glasc'... if you value your life.\"",
+        "textZh": "如果你还珍惜自己的命，就该叫我“戈拉斯克女士”。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Renata_Glasc_Select.ogg/Renata_Glasc_Select.ogg.mp3?60fd1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Renata_Glasc/Audio?oldid=4045594"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I won't hold my breath.\"",
+        "textZh": "我可不会抱太大期待。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Renata_Glasc_Ban.ogg/Renata_Glasc_Ban.ogg.mp3?5f2fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Renata_Glasc/Audio?oldid=4045594"
+      }
+    ],
+    "Renekton": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"As I live, all will die!\"",
+        "textZh": "只要我还活着，所有人都得死！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Renekton_Select.ogg/Renekton_Select.ogg.mp3?2390f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Renekton/Audio?oldid=4034523"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Chaos will follow.\"",
+        "textZh": "混乱将接踵而至。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Renekton_Ban.ogg/Renekton_Ban.ogg.mp3?be91c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Renekton/Audio?oldid=4034523"
+      }
+    ],
+    "Rengar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Tonight, we hunt!\"",
+        "textZh": "今晚，我们狩猎！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rengar_Select.ogg/Rengar_Select.ogg.mp3?66af4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rengar/Audio?oldid=4024378"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"A true hunter never rests.\"",
+        "textZh": "真正的猎人从不休息。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rengar_Ban.ogg/Rengar_Ban.ogg.mp3?2390f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rengar/Audio?oldid=4024378"
+      }
+    ],
+    "Riven": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"What is broken can be reforged.\"",
+        "textZh": "破碎之物，亦可重铸。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Riven_Select.ogg/Riven_Select.ogg.mp3?95f0e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Riven/Audio?oldid=3931774"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Learn from your mistakes.\"",
+        "textZh": "从你的错误中学习吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Riven_Ban.ogg/Riven_Ban.ogg.mp3?016dd",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Riven/Audio?oldid=3931774"
+      }
+    ],
+    "Rumble": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let's get in the fight!\"",
+        "textZh": "开打吧！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rumble_Select.ogg/Rumble_Select.ogg.mp3?7724a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rumble/Audio?oldid=4035543"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Alright... I'm going.\"",
+        "textZh": "好吧……我这就走。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Rumble_Ban.ogg/Rumble_Ban.ogg.mp3?0b4ee",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Rumble/Audio?oldid=4035543"
+      }
+    ],
+    "Ryze": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A step ahead of cataclysm.\"",
+        "textZh": "始终走在灾变之前。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ryze_Select.ogg/Ryze_Select.ogg.mp3?b01bb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ryze/Audio?oldid=4029241"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Fine.\"",
+        "textZh": "好吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ryze_Ban.ogg/Ryze_Ban.ogg.mp3?9cb05",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ryze/Audio?oldid=4029241"
+      }
+    ],
+    "Samira": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You want style? You've found her.\"",
+        "textZh": "想要风范？你找到她了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Samira_Select.ogg/Samira_Select.ogg.mp3?1907f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Samira/Audio?oldid=4006992"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Eh, I could do better.\"",
+        "textZh": "呃，我能找到更好的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Samira_Ban.ogg/Samira_Ban.ogg.mp3?95034",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Samira/Audio?oldid=4006992"
+      }
+    ],
+    "Sejuani": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Trust nothing but your strength.\"",
+        "textZh": "除了自己的力量，什么都别相信。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sejuani_Select.ogg/Sejuani_Select.ogg.mp3?b5736",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sejuani/Audio?oldid=3942381"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I won't be denied!\"",
+        "textZh": "谁也别想阻止我！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sejuani_Ban.ogg/Sejuani_Ban.ogg.mp3?1d024",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sejuani/Audio?oldid=3942381"
+      }
+    ],
+    "Senna": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"No one fights alone in the Mist.\"",
+        "textZh": "在黑雾中，没有人独自战斗。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Senna_Select.ogg/Senna_Select.ogg.mp3?0fffb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Senna/Audio?oldid=4041341"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Fine. I don't need more enemies.\"",
+        "textZh": "好吧。我不需要更多敌人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Senna_Ban.ogg/Senna_Ban.ogg.mp3?7624a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Senna/Audio?oldid=4041341"
+      }
+    ],
+    "Seraphine": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let's change the world!\"",
+        "textZh": "让我们改变世界！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Seraphine_Select.ogg/Seraphine_Select.ogg.mp3?3bbe7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Seraphine/Audio?oldid=4077629"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Oookay!\"",
+        "textZh": "好——吧！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Seraphine_Ban.ogg/Seraphine_Ban.ogg.mp3?ca34c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Seraphine/Audio?oldid=4077629"
+      }
+    ],
+    "Sett": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I'm undisputed.\"",
+        "textZh": "我的地位无人能撼动。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sett_Select.ogg/Sett_Select.ogg.mp3?149d7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sett/Audio?oldid=4081722"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"'Ey, never pick a fight you can't win.\"",
+        "textZh": "嘿，别挑起一场你赢不了的架。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sett_Ban.ogg/Sett_Ban.ogg.mp3?be818",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sett/Audio?oldid=4081722"
+      }
+    ],
+    "Shaco": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"How about a magic trick?\"",
+        "textZh": "来个魔术怎么样？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shaco_Select.ogg/Shaco_Select.ogg.mp3?73f1c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shaco/Audio?oldid=4004970"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"The joke's on you!\"",
+        "textZh": "被耍的是你！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shaco_Ban.ogg/Shaco_Ban.ogg.mp3?1c8d5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shaco/Audio?oldid=4004970"
+      }
+    ],
+    "Shen": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A demonstration of superior judgement.\"",
+        "textZh": "让你见识何为高明的判断。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shen_Select.ogg/Shen_Select.ogg.mp3?82607",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shen/Audio?oldid=4029236"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"So I go.\"",
+        "textZh": "那我便离去。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shen_Ban.ogg/Shen_Ban.ogg.mp3?a4942",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shen/Audio?oldid=4029236"
+      }
+    ],
+    "Shyvana": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"My fury rises.\"",
+        "textZh": "我的怒火正在升腾。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shyvana_Select.ogg/Shyvana_Select.ogg.mp3?af2e6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shyvana/Audio?oldid=4052675"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I smell fear.\"",
+        "textZh": "我闻到了恐惧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Shyvana_Ban.ogg/Shyvana_Ban.ogg.mp3?55bec",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Shyvana/Audio?oldid=4052675"
+      }
+    ],
+    "Singed": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"How about a drink?\"",
+        "textZh": "来一杯怎么样？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Singed_Select.ogg/Singed_Select.ogg.mp3?4dcdc",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Singed/Audio?oldid=3954965"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I hear you.\"",
+        "textZh": "听到你了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Singed_Ban.ogg/Singed_Ban.ogg.mp3?4dd1a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Singed/Audio?oldid=3954965"
+      }
+    ],
+    "Sion": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Rest is for the living.\"",
+        "textZh": "休息是留给活人的。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sion_Select.ogg/Sion_Select.ogg.mp3?1a856",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sion/Audio?oldid=4047318"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You reek of fear!\"",
+        "textZh": "你浑身散发着恐惧的恶臭！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sion_Ban.ogg/Sion_Ban.ogg.mp3?4dcdc",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sion/Audio?oldid=4047318"
+      }
+    ],
+    "Sivir": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I always take my toll—blood or gold.\"",
+        "textZh": "我的报酬从不落空——鲜血，或是金币。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sivir_Select.ogg/Sivir_Select.ogg.mp3?b7e98",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sivir/Audio?oldid=4013319"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"It's just business.\"",
+        "textZh": "这只是生意。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sivir_Ban.ogg/Sivir_Ban.ogg.mp3?1a856",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sivir/Audio?oldid=4013319"
+      }
+    ],
+    "Skarner": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I am the vanguard of Ixtal's protection.\"",
+        "textZh": "我是守护以绪塔尔的先锋。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Skarner_Select.ogg/Skarner_Select.ogg.mp3?dc10f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Skarner/Audio?oldid=4016294"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You've already lost.\"",
+        "textZh": "你已经输了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Skarner_Ban.ogg/Skarner_Ban.ogg.mp3?158ad",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Skarner/Audio?oldid=4016294"
+      }
+    ],
+    "Smolder": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I bring the heat!\"",
+        "textZh": "我带来炽热！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Smolder_Select.ogg/Smolder_Select.ogg.mp3?b0058",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Smolder/Audio?oldid=3991029"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"What did I do?\"",
+        "textZh": "我做错什么了？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Smolder_Ban.ogg/Smolder_Ban.ogg.mp3?9d716",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Smolder/Audio?oldid=3991029"
+      }
+    ],
+    "Sona": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"What masterpiece shall we play today?\"",
+        "textZh": "今天我们要演奏哪一部杰作？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sona_Select.ogg/Sona_Select.ogg.mp3?2649e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sona/Audio?oldid=4041340"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "Sona smacks her hands on her etwahl.",
+        "textZh": "娑娜用双手拍击她的叆华。（乐器声，无口述台词）",
+        "nonverbal": true,
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sona_Ban.ogg/Sona_Ban.ogg.mp3?0695d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sona/Audio?oldid=4041340"
+      }
+    ],
+    "Soraka": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let me guide you.\"",
+        "textZh": "让我指引你。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Soraka_Select.ogg/Soraka_Select.ogg.mp3?fdbaa",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Soraka/Audio?oldid=4007300"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"What must be done.\"",
+        "textZh": "该做的事，终究要做。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Soraka_Ban.ogg/Soraka_Ban.ogg.mp3?ac5af",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Soraka/Audio?oldid=4007300"
+      }
+    ],
+    "Swain": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fear the power you do not see.\"",
+        "textZh": "畏惧那股你看不见的力量吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Swain_Select.ogg/Swain_Select.ogg.mp3?8a6f7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Swain/Audio?oldid=4072322"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Do not confuse cowardice for wisdom.\"",
+        "textZh": "不要把怯懦误当成智慧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Swain_Ban.ogg/Swain_Ban.ogg.mp3?62b4a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Swain/Audio?oldid=4072322"
+      }
+    ],
+    "Sylas": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"No more cages!\"",
+        "textZh": "再也不要牢笼！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sylas_Select.ogg/Sylas_Select.ogg.mp3?5aec9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sylas/Audio?oldid=4019157"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You can't cage me for long.\"",
+        "textZh": "你困不了我多久。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Sylas_Ban.ogg/Sylas_Ban.ogg.mp3?9b21e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Sylas/Audio?oldid=4019157"
+      }
+    ],
+    "Syndra": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"So much untapped power!\"",
+        "textZh": "如此庞大、尚未释放的力量！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Syndra_Select.ogg/Syndra_Select.ogg.mp3?f3004",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Syndra/Audio?oldid=4012096"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"People fear what they cannot understand.\"",
+        "textZh": "人们畏惧自己无法理解的事物。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Syndra_Ban.ogg/Syndra_Ban.ogg.mp3?5aec9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Syndra/Audio?oldid=4012096"
+      }
+    ],
+    "TahmKench": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Call me king, call me demon. Water forgets the names of the drowned.\"",
+        "textZh": "叫我国王也好，恶魔也罢。水会遗忘溺亡者的名字。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tahm_Kench_Select.ogg/Tahm_Kench_Select.ogg.mp3?6e0c7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tahm_Kench/Audio?oldid=3862098"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You're duller than a broken sandwich.\"",
+        "textZh": "你比一个散架的三明治还要无趣。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tahm_Kench_Ban.ogg/Tahm_Kench_Ban.ogg.mp3?11ba2",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tahm_Kench/Audio?oldid=3862098"
+      }
+    ],
+    "Taliyah": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Know the loom. Be the stone.\"",
+        "textZh": "理解织机，化身磐石。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Taliyah_Select.ogg/Taliyah_Select.ogg.mp3?470e7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Taliyah/Audio?oldid=3987048"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Grounded?!\"",
+        "textZh": "不许出门了？！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Taliyah_Ban.ogg/Taliyah_Ban.ogg.mp3?00138",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Taliyah/Audio?oldid=3987048"
+      }
+    ],
+    "Talon": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Live and die by the blade.\"",
+        "textZh": "以刀锋为生，以刀锋赴死。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Talon_Select.ogg/Talon_Select.ogg.mp3?f6b81",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Talon/Audio?oldid=3950923"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Pathetic!\"",
+        "textZh": "可悲！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Talon_Ban.ogg/Talon_Ban.ogg.mp3?470e7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Talon/Audio?oldid=3950923"
+      }
+    ],
+    "Taric": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"That glimmer of hope you see, that's me.\"",
+        "textZh": "你看到的那一线希望，就是我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Taric_Select.ogg/Taric_Select.ogg.mp3?aefad",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Taric/Audio?oldid=3958962"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Your judgement is clouded. Seek clarity.\"",
+        "textZh": "你的判断受到了蒙蔽。去寻找清明吧。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Taric_Ban.ogg/Taric_Ban.ogg.mp3?1bf1e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Taric/Audio?oldid=3958962"
+      }
+    ],
+    "Teemo": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Bandle scout Teemo reporting for duty!\"",
+        "textZh": "班德尔斥候提莫，前来报到！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Teemo_Select.ogg/Teemo_Select.ogg.mp3?b083e",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Teemo/Audio?oldid=4043760"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Awh, scout life isn't for everyone I guess...\"",
+        "textZh": "唉，看来斥候生活确实不是人人都适合……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Teemo_Ban.ogg/Teemo_Ban.ogg.mp3?263ed",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Teemo/Audio?oldid=4043760"
+      }
+    ],
+    "Thresh": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"What delightful agony we shall inflict.\"",
+        "textZh": "我们将带来多么令人愉悦的痛苦。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Thresh_Select.ogg/Thresh_Select.ogg.mp3?17a43",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Thresh/Audio?oldid=3931784"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"It's over when I say.\"",
+        "textZh": "我说结束，才算结束。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Thresh_Ban.ogg/Thresh_Ban.ogg.mp3?c2fe8",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Thresh/Audio?oldid=3931784"
+      }
+    ],
+    "Tristana": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Once a Bandle gunner, always a Bandle gunner!\"",
+        "textZh": "一日是班德尔炮手，终身都是班德尔炮手！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tristana_Select.ogg/Tristana_Select.ogg.mp3?81bae",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tristana/Audio?oldid=4058487"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Let me get in there!\"",
+        "textZh": "让我冲进去！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tristana_Ban.ogg/Tristana_Ban.ogg.mp3?1d0d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tristana/Audio?oldid=4058487"
+      }
+    ],
+    "Trundle": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Time to troll!\"",
+        "textZh": "该巨魔登场了！（troll 也有捣乱、戏弄之意。）",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Trundle_Select.ogg/Trundle_Select.ogg.mp3?f0fd4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Trundle/Audio?oldid=4047312"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Pathetic!\"",
+        "textZh": "可悲！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Trundle_Ban.ogg/Trundle_Ban.ogg.mp3?81bae",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Trundle/Audio?oldid=4047312"
+      }
+    ],
+    "Tryndamere": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"This'll be a slaughter.\"",
+        "textZh": "这将是一场屠杀。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tryndamere_Select.ogg/Tryndamere_Select.ogg.mp3?9d5e7",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tryndamere/Audio?oldid=4043786"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"As you wish.\"",
+        "textZh": "如你所愿。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Tryndamere_Ban.ogg/Tryndamere_Ban.ogg.mp3?53f7c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Tryndamere/Audio?oldid=4043786"
+      }
+    ],
+    "TwistedFate": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Lady Luck is smilin'.\"",
+        "textZh": "幸运女神正在微笑。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Twisted_Fate_Select.ogg/Twisted_Fate_Select.ogg.mp3?f239f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate/Audio?oldid=4019507"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I reckon.\"",
+        "textZh": "我看也是。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Twisted_Fate_Ban.ogg/Twisted_Fate_Ban.ogg.mp3?73a8d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate/Audio?oldid=4019507"
+      }
+    ],
+    "Twitch": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"What doesn't kill you just isn't finished yet.\"",
+        "textZh": "没能杀死你的东西，只是还没干完活。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Twitch_Select.ogg/Twitch_Select.ogg.mp3?4cec6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Twitch/Audio?oldid=4058161"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'm on to you!\"",
+        "textZh": "我已经盯上你了！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Twitch_Ban.ogg/Twitch_Ban.ogg.mp3?53edf",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Twitch/Audio?oldid=4058161"
+      }
+    ],
+    "Udyr": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Conflict feeds the Freljord.\"",
+        "textZh": "冲突滋养着弗雷尔卓德。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Udyr_Select.ogg/Udyr_Select.ogg.mp3?11183",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Udyr/Audio?oldid=3931780"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Gutless.\"",
+        "textZh": "没胆量。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Udyr_Ban.ogg/Udyr_Ban.ogg.mp3?6f203",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Udyr/Audio?oldid=3931780"
+      }
+    ],
+    "Urgot": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You cannot know strength... until you are broken.\"",
+        "textZh": "只有支离破碎之后……你才会懂得力量。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Urgot_Select.ogg/Urgot_Select.ogg.mp3?96fd6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Urgot/Audio?oldid=4067209"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Cling to hope... it is all you have.\"",
+        "textZh": "紧抓希望吧……那是你仅剩的东西。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Urgot_Ban.ogg/Urgot_Ban.ogg.mp3?22d2d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Urgot/Audio?oldid=4067209"
+      }
+    ],
+    "Varus": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The guilty will know agony.\"",
+        "textZh": "有罪之人，必将领教痛苦。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Varus_Select.ogg/Varus_Select.ogg.mp3?daf08",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Varus/Audio?oldid=4031785"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I have no grace to give.\"",
+        "textZh": "我没有仁慈可以施舍。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Varus_Ban.ogg/Varus_Ban.ogg.mp3?08553",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Varus/Audio?oldid=4031785"
+      }
+    ],
+    "Vayne": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Let us hunt those who have fallen to darkness.\"",
+        "textZh": "让我们猎杀那些堕入黑暗的人。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vayne_Select.ogg/Vayne_Select.ogg.mp3?d2005",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vayne/Audio?oldid=4070441"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Impure fools.\"",
+        "textZh": "污秽的蠢货。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vayne_Ban.ogg/Vayne_Ban.ogg.mp3?18fe5",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vayne/Audio?oldid=4070441"
+      }
+    ],
+    "Veigar": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Know that if the tables were turned, I would show you no mercy!\"",
+        "textZh": "记住，若是形势反转，我绝不会对你手下留情！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Veigar_Select.ogg/Veigar_Select.ogg.mp3?2fc5d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Veigar/Audio?oldid=4013714"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Your commands tire me.\"",
+        "textZh": "你的命令令我厌烦。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Veigar_Ban.ogg/Veigar_Ban.ogg.mp3?5ba1b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Veigar/Audio?oldid=4013714"
+      }
+    ],
+    "Velkoz": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Knowledge through… disintegration.\"",
+        "textZh": "通过……瓦解，获取知识。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vel%27Koz_Select.ogg/Vel%27Koz_Select.ogg.mp3?ff3fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vel'Koz/Audio?oldid=4027342"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"That's unexpected.\"",
+        "textZh": "真出乎意料。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vel%27Koz_Ban.ogg/Vel%27Koz_Ban.ogg.mp3?419ed",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vel'Koz/Audio?oldid=4027342"
+      }
+    ],
+    "Vex": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"'Kay. See if I care.\"",
+        "textZh": "行啊。看我在不在乎。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vex_Select.ogg/Vex_Select.ogg.mp3?022a9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vex/Audio?oldid=4012960"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"'Kay. See if I care.\"",
+        "textZh": "行啊。看我在不在乎。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vex_Ban.ogg/Vex_Ban.ogg.mp3?ff3fb",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vex/Audio?oldid=4012960"
+      }
+    ],
+    "Vi": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Punch first. Ask questions while punching.\"",
+        "textZh": "先出拳，边打边问。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vi_Select.ogg/Vi_Select.ogg.mp3?48d42",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vi/Audio?oldid=3931776"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"If I want your opinion, I'll beat it out of you.\"",
+        "textZh": "我要是想听你的意见，就会把它揍出来。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vi_Ban.ogg/Vi_Ban.ogg.mp3?022a9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vi/Audio?oldid=3931776"
+      }
+    ],
+    "Viego": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Love ruins all.\"",
+        "textZh": "爱会毁掉一切。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Viego_Select.ogg/Viego_Select.ogg.mp3?85f30",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Viego/Audio?oldid=4056317"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"My heart was already broken.\"",
+        "textZh": "我的心早就碎了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Viego_Ban.ogg/Viego_Ban.ogg.mp3?48d42",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Viego/Audio?oldid=4056317"
+      }
+    ],
+    "Viktor": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Join the glorious evolution.\"",
+        "textZh": "加入光荣的进化。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Viktor_Select.ogg/Viktor_Select.ogg.mp3?dba14",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Viktor/Audio?oldid=3975290"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Humanity can be so much more.\"",
+        "textZh": "人类本可以远超现在的模样。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Viktor_Ban.ogg/Viktor_Ban.ogg.mp3?1af0c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Viktor/Audio?oldid=3975290"
+      }
+    ],
+    "Vladimir": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The rivers will run red.\"",
+        "textZh": "河流将染成血红。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vladimir_Select.ogg/Vladimir_Select.ogg.mp3?a48cf",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vladimir/Audio?oldid=4027408"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'm absolutely livid.\"",
+        "textZh": "我简直气得发紫。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Vladimir_Ban.ogg/Vladimir_Ban.ogg.mp3?23dba",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Vladimir/Audio?oldid=4027408"
+      }
+    ],
+    "Volibear": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Feel the power of the wild.\"",
+        "textZh": "感受荒野的力量。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Volibear_Select.ogg/Volibear_Select.ogg.mp3?635ac",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Volibear/Audio?oldid=4027871"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You have the heart of a weakling.\"",
+        "textZh": "你有一颗弱者的心。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Volibear_Ban.ogg/Volibear_Ban.ogg.mp3?a48cf",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Volibear/Audio?oldid=4027871"
+      }
+    ],
+    "Warwick": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Blood runs... they all run.\"",
+        "textZh": "鲜血流淌……他们四散奔逃。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Warwick_Select.ogg/Warwick_Select.ogg.mp3?e30b0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Warwick/Audio?oldid=4050602"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"They fear me. They should.\"",
+        "textZh": "他们怕我。他们理应如此。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Warwick_Ban.ogg/Warwick_Ban.ogg.mp3?e3155",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Warwick/Audio?oldid=4050602"
+      }
+    ],
+    "Xayah": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I can never resist an invitation to dance.\"",
+        "textZh": "我从来无法拒绝跳舞的邀请。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xayah_Select.ogg/Xayah_Select.ogg.mp3?19005",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xayah/Audio?oldid=4079406"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Fine, I'll just be over here… sharpening my feathers.\"",
+        "textZh": "好吧，我就在这边……磨磨羽毛。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xayah_Ban.ogg/Xayah_Ban.ogg.mp3?0645a",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xayah/Audio?oldid=4079406"
+      }
+    ],
+    "Xerath": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I will be free.\"",
+        "textZh": "我将获得自由。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xerath_Select.ogg/Xerath_Select.ogg.mp3?034f9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xerath/Audio?oldid=3931798"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Simple fools.\"",
+        "textZh": "无知的蠢货。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xerath_Ban.ogg/Xerath_Ban.ogg.mp3?63d73",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xerath/Audio?oldid=3931798"
+      }
+    ],
+    "XinZhao": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"One spear, one thousand battles.\"",
+        "textZh": "一杆长枪，千场战斗。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xin_Zhao_Select.ogg/Xin_Zhao_Select.ogg.mp3?f1514",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xin_Zhao/Audio?oldid=3952928"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"A warrior's spirit is never broken.\"",
+        "textZh": "战士的精神永不屈服。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Xin_Zhao_Ban.ogg/Xin_Zhao_Ban.ogg.mp3?91407",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Xin_Zhao/Audio?oldid=3952928"
+      }
+    ],
+    "Yasuo": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Death is like the wind—always by my side.\"",
+        "textZh": "死亡如风，常伴吾身。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yasuo_Select.ogg/Yasuo_Select.ogg.mp3?8151f",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yasuo/Audio?oldid=4002106"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"No cure for fools.\"",
+        "textZh": "愚蠢无药可医。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yasuo_Ban.ogg/Yasuo_Ban.ogg.mp3?a3548",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yasuo/Audio?oldid=4002106"
+      }
+    ],
+    "Yone": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"One to cut, one to seal.\"",
+        "textZh": "一剑斩断，一剑封印。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yone_Select.ogg/Yone_Select.ogg.mp3?f05a9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yone/Audio?oldid=3965589"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"You think I am the one to fear? Hmph.\"",
+        "textZh": "你以为该畏惧的是我？哼。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yone_Ban.ogg/Yone_Ban.ogg.mp3?40e84",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yone/Audio?oldid=3965589"
+      }
+    ],
+    "Yorick": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fear not... I will make use of your corpse.\"",
+        "textZh": "别害怕……你的尸体，我自有用处。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yorick_Select.ogg/Yorick_Select.ogg.mp3?6c26b",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yorick/Audio?oldid=4070102"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"It's your funeral.\"",
+        "textZh": "你这是自寻死路。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yorick_Ban.ogg/Yorick_Ban.ogg.mp3?a086d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yorick/Audio?oldid=4070102"
+      }
+    ],
+    "Yunara": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The time has come to prune the tree.\"",
+        "textZh": "修剪这棵树的时刻到了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yunara_Select.ogg/Yunara_Select.ogg.mp3?458b1",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yunara/Audio?oldid=4027965"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I assure you: I am quite patient.\"",
+        "textZh": "我向你保证：我很有耐心。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yunara_Ban.ogg/Yunara_Ban.ogg.mp3?a313d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yunara/Audio?oldid=4027965"
+      }
+    ],
+    "Yuumi": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"You and me, we got this!\"",
+        "textZh": "你和我，肯定没问题！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yuumi_Select.ogg/Yuumi_Select.ogg.mp3?7d5d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yuumi/Audio?oldid=4010642"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"More of a dog person, huh?\"",
+        "textZh": "你更喜欢狗，是吧？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Yuumi_Ban.ogg/Yuumi_Ban.ogg.mp3?a7c9d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Yuumi/Audio?oldid=4010642"
+      }
+    ],
+    "Zaahen": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Fight against the fall.\"",
+        "textZh": "奋战，抗拒陨落。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zaahen_Select.ogg/Zaahen_Select.ogg.mp3?b721c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zaahen/Audio?oldid=3994871"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Wise to dread my return.\"",
+        "textZh": "畏惧我的归来，是明智之举。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zaahen_Ban.ogg/Zaahen_Ban.ogg.mp3?b721c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zaahen/Audio?oldid=3994871"
+      }
+    ],
+    "Zac": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I was made for this... literally.\"",
+        "textZh": "我就是为此而造的……字面意义上。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zac_Select.ogg/Zac_Select.ogg.mp3?28c6d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zac/Audio?oldid=4014282"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Well, now I'm just mad.\"",
+        "textZh": "好吧，现在我可真生气了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zac_Ban.ogg/Zac_Ban.ogg.mp3?da2de",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zac/Audio?oldid=4014282"
+      }
+    ],
+    "Zed": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"The unseen blade is the deadliest.\"",
+        "textZh": "看不见的利刃，最为致命。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zed_Select.ogg/Zed_Select.ogg.mp3?71f6d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zed/Audio?oldid=4028180"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Do not deny me.\"",
+        "textZh": "不要拒绝我。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zed_Ban.ogg/Zed_Ban.ogg.mp3?28c6d",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zed/Audio?oldid=4028180"
+      }
+    ],
+    "Zeri": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"A spark is all I need!\"",
+        "textZh": "我只需要一丝火花！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zeri_Select.ogg/Zeri_Select.ogg.mp3?fa1d4",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zeri/Audio?oldid=4021935"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"No spark between us anyway.\"",
+        "textZh": "反正我们之间也没什么火花。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zeri_Ban.ogg/Zeri_Ban.ogg.mp3?cb3c3",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zeri/Audio?oldid=4021935"
+      }
+    ],
+    "Ziggs": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"This'll be a blast!\"",
+        "textZh": "这会炸翻天的！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ziggs_Select.ogg/Ziggs_Select.ogg.mp3?0a376",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ziggs/Audio?oldid=4047313"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"I'm going, I'm going.\"",
+        "textZh": "我走，我走就是了。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Ziggs_Ban.ogg/Ziggs_Ban.ogg.mp3?ae9b0",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Ziggs/Audio?oldid=4047313"
+      }
+    ],
+    "Zilean": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"I knew you would do that... \"",
+        "textZh": "我就知道你会这么做……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zilean_Select.ogg/Zilean_Select.ogg.mp3?ef7ea",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zilean/Audio?oldid=4027440"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Inevitably.\"",
+        "textZh": "不可避免。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zilean_Ban.ogg/Zilean_Ban.ogg.mp3?6da25",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zilean/Audio?oldid=4027440"
+      }
+    ],
+    "Zoe": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Yes! This'll be fun! Right?\"",
+        "textZh": "好耶！这一定很好玩！对吧？",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zoe_Select.ogg/Zoe_Select.ogg.mp3?c6fe6",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zoe/Audio?oldid=3958010"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"No, that's not nice!\"",
+        "textZh": "不，这样可不好！",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zoe_Ban.ogg/Zoe_Ban.ogg.mp3?b3ba9",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zoe/Audio?oldid=3958010"
+      }
+    ],
+    "Zyra": [
+      {
+        "id": "pick-1",
+        "event": "pick",
+        "textEn": "\"Feel the thorns' embrace.\"",
+        "textZh": "感受荆棘的拥抱。",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zyra_Select.ogg/Zyra_Select.ogg.mp3?210cd",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zyra/Audio?oldid=3957574"
+      },
+      {
+        "id": "ban-1",
+        "event": "ban",
+        "textEn": "\"Soon...\"",
+        "textZh": "很快……",
+        "translationKind": "learning",
+        "audioEn": "https://wiki.leagueoflegends.com/en-us/images/transcoded/Zyra_Ban.ogg/Zyra_Ban.ogg.mp3?5c03c",
+        "sourceUrl": "https://wiki.leagueoflegends.com/en-us/Zyra/Audio?oldid=3957574"
+      }
+    ]
+  }
+}
